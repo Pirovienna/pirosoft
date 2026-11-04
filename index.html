@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -11,11 +12,32 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
+    }
+    header {
+      margin-bottom: 30px;
+    }
+    .logo {
+      max-width: 320px;
+      height: auto;
+      margin-bottom: 25px;
+    }
+    nav {
+      margin-bottom: 45px;
+    }
+    nav a {
+      color: #c9f24c;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     h1 {
-      color: #c9f24c;
-      font-size: 44px;
+      color: #ffffff;
+      font-size: 32px;
       margin-bottom: 12px;
     }
     p {
@@ -23,22 +45,58 @@
       font-size: 18px;
       max-width: 600px;
       margin: 0 auto 30px auto;
-      line-height: 1.5;
+      line-height: 1.6;
     }
     .btn {
       display: inline-block;
       background-color: #c9f24c;
       color: #121316;
       text-decoration: none;
-      padding: 12px 24px;
+      padding: 12px 28px;
       font-weight: bold;
       border-radius: 6px;
+      font-size: 16px;
+    }
+    footer {
+      margin-top: 80px;
+      border-top: 1px solid #24262b;
+      padding-top: 25px;
+      font-size: 14px;
+      color: #8b949e;
+    }
+    footer a {
+      color: #8b949e;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: #c9f24c;
     }
   </style>
 </head>
 <body>
-  <h1>PiroSoft</h1>
-  <p>Softwarelösungen für Kleinbetriebe und Start-Ups aus Wien.</p>
-  <a href="#" class="btn">Demo ansehen</a>
+
+  <header>
+    <img src="logopiro..png" alt="Pirosoft Logo" class="logo">
+    <nav aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="ueber-uns.html">Über uns & Marke</a>
+      <a href="barrierefreiheit.html">Barrierefreiheit</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Moderne Cloud-Lösungen für Start-Ups</h1>
+    <p>Pirosoft entwickelt schlanke, barrierefreie SaaS-Werkzeuge zur effizienten Arbeitsorganisation im deutschsprachigen Raum.</p>
+    <a href="ueber-uns.html" class="btn">Mehr über Pirosoft</a>
+  </main>
+
+  <footer>
+    <p>© 2026 Pirosoft GmbH · 1060 Wien</p>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a> |
+    <a href="lizenz.html">Lizenzbestimmungen</a>
+  </footer>
+
 </body>
 </html>
