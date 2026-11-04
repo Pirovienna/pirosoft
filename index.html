@@ -11,7 +11,7 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      padding: 20px 20px 50px 20px;
+      padding: 15px 20px 50px 20px;
     }
     .container {
       max-width: 860px;
@@ -19,20 +19,20 @@
     }
     header {
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     .logo {
       max-width: 340px;
       width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto 2px auto;
+      margin: 0 auto -8px auto; /* Logonun altındaki şeffaf boşluğu kesip menüyü tam dibine çeker */
     }
     nav {
       margin: 0;
       text-align: center;
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.4;
       color: #6e7681;
     }
     nav a {
@@ -45,29 +45,12 @@
       color: #c9f24c;
       text-decoration: underline;
     }
-    .hero-section {
-      text-align: center;
-      margin-top: 20px;
-    }
-    h1 {
-      color: #c9f24c;
-      font-size: 34px;
-      margin: 0 0 10px 0;
-      font-weight: bold;
-      letter-spacing: -0.5px;
-    }
-    .hero-subtitle {
-      font-size: 17px;
-      color: #d1d5db;
-      margin: 0 auto 20px auto;
-      max-width: 700px;
-    }
     .hero-img {
       width: 100%;
-      max-height: 400px;
+      max-height: 420px;
       object-fit: cover;
       border-radius: 8px;
-      margin-top: 10px;
+      margin-top: 15px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     }
     .img-caption {
@@ -75,7 +58,24 @@
       color: #8b949e;
       text-align: center;
       margin-top: 8px;
+      margin-bottom: 25px;
+    }
+    .hero-title-area {
+      text-align: center;
       margin-bottom: 35px;
+    }
+    h1 {
+      color: #ffffff; /* PiroMed Office artık tam beyaz */
+      font-size: 36px;
+      margin: 0 0 8px 0;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+    }
+    .hero-subtitle {
+      font-size: 17px;
+      color: #d1d5db;
+      margin: 0 auto;
+      max-width: 700px;
     }
     h2 {
       color: #ffffff;
@@ -149,14 +149,14 @@
     </header>
 
     <main>
-      <div class="hero-section">
+      <img src="Praxispixabay.jpg" alt="Moderne Arztpraxis mit organisierter Ausstattung" class="hero-img">
+      <div class="img-caption">Bildnachweis: Lizenzfreies Symbolfoto via Pixabay gem. § 2 UrhG</div>
+
+      <div class="hero-title-area">
         <h1>PiroMed Office</h1>
         <p class="hero-subtitle">
           Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen
         </p>
-
-        <img src="Praxispixabay.jpg" alt="Moderne Arztpraxis mit organisierter Ausstattung" class="hero-img">
-        <div class="img-caption">Bildnachweis: Lizenzfreies Symbolfoto via Pixabay gem. § 2 UrhG</div>
       </div>
 
       <h2>Verlässliche Abläufe im Praxisalltag</h2>
