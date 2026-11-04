@@ -14,7 +14,7 @@
       padding: 10px 20px 50px 20px;
     }
     .container {
-      max-width: 1020px; /* Menü genişliği ile fotoğraf genişliğini tam eşitleyen ölçü */
+      max-width: 1000px;
       margin: 0 auto;
     }
     header {
@@ -27,28 +27,34 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto -28px auto; /* Logonun alt boşluğunu sıfırlayıp menüyü dibine çeker */
+      margin: 0 auto -28px auto;
     }
     nav {
       margin: 0 0 12px 0;
-      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       font-size: 15px;
-      line-height: 1.4;
       color: #6e7681;
-      white-space: nowrap; /* Menünün alt satıra kırılmasını önler, tek hat tutar */
+      box-sizing: border-box;
     }
     nav a {
       color: #ffffff;
       text-decoration: none;
-      margin: 0 8px;
       font-weight: 500;
+      white-space: nowrap;
     }
     nav a:hover {
       color: #c9f24c;
       text-decoration: underline;
     }
+    .separator {
+      color: #6e7681;
+      user-select: none;
+    }
     .hero-img {
-      width: 100%; /* Kapsayıcının (1020px) tüm genişliğini kaplar */
+      width: 100%;
       max-height: 480px;
       object-fit: cover;
       border-radius: 8px;
@@ -81,7 +87,7 @@
       max-width: 750px;
     }
     .content-area {
-      max-width: 860px; /* Okuma rahatlığı için metin ve kutuları ideal genişlikte tutar */
+      max-width: 860px;
       margin: 0 auto;
     }
     h2 {
@@ -101,12 +107,17 @@
       gap: 18px;
       margin-top: 20px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .separator {
+        display: none;
+      }
       .feature-grid {
         grid-template-columns: 1fr;
-      }
-      nav {
-        white-space: normal;
       }
     }
     .feature-card {
@@ -148,12 +159,18 @@
     <header>
       <img src="logopiro..png" alt="PiroSoft Firmenlogo" class="logo">
       <nav aria-label="Hauptnavigation">
-        <a href="index.html">Start</a> |
-        <a href="ueber-uns.html">Über uns</a> |
-        <a href="barrierefreiheit.html">Barrierefreiheit</a> |
-        <a href="impressum.html">Impressum</a> |
-        <a href="datenschutz.html">Datenschutz</a> |
-        <a href="lizenz.html">Lizenzbestimmungen</a> |
+        <a href="index.html">Start</a>
+        <span class="separator">|</span>
+        <a href="ueber-uns.html">Über uns</a>
+        <span class="separator">|</span>
+        <a href="barrierefreiheit.html">Barrierefreiheit</a>
+        <span class="separator">|</span>
+        <a href="impressum.html">Impressum</a>
+        <span class="separator">|</span>
+        <a href="datenschutz.html">Datenschutz</a>
+        <span class="separator">|</span>
+        <a href="lizenz.html">Lizenzbestimmungen</a>
+        <span class="separator">|</span>
         <a href="quellen.html">Rechtsgrundlagen</a>
       </nav>
     </header>
