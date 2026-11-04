@@ -11,30 +11,34 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      padding: 40px 20px;
+      padding: 30px 20px 50px 20px;
     }
     .container {
       max-width: 860px;
       margin: 0 auto;
     }
     nav {
-      margin-bottom: 40px;
+      margin: 0 0 40px 0;
       text-align: center;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #6e7681;
     }
     nav a {
-      color: #c9f24c;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-      font-size: 15px;
+      margin: 0 6px;
+      font-weight: 500;
     }
     nav a:hover {
+      color: #c9f24c;
       text-decoration: underline;
     }
     h1 {
       color: #c9f24c;
-      font-size: 30px;
+      font-size: 32px;
       margin-bottom: 20px;
+      text-align: center;
     }
     h2 {
       color: #ffffff;
@@ -43,30 +47,35 @@
       padding-bottom: 8px;
       margin-top: 35px;
     }
-    .ref-card {
+    p, li {
+      color: #d1d5db;
+      font-size: 16px;
+    }
+    .source-box {
       background-color: #16181d;
+      border: 1px solid #24262b;
       border-left: 4px solid #c9f24c;
       padding: 16px 20px;
-      margin: 18px 0;
       border-radius: 0 8px 8px 0;
+      margin-bottom: 15px;
     }
-    .ref-card h3 {
+    .source-box h3 {
       color: #c9f24c;
+      margin-top: 0;
+      margin-bottom: 8px;
       font-size: 17px;
-      margin: 0 0 8px 0;
     }
-    .ref-card p {
-      color: #d1d5db;
+    .source-box p {
+      margin-top: 0;
+      margin-bottom: 10px;
       font-size: 15px;
-      margin: 0 0 8px 0;
     }
-    .ref-card a {
-      color: #9ca3af;
+    .source-box a {
+      color: #8b949e;
       font-size: 13px;
       text-decoration: underline;
-      word-break: break-all;
     }
-    .ref-card a:hover {
+    .source-box a:hover {
       color: #c9f24c;
     }
     footer {
@@ -77,112 +86,86 @@
       color: #8b949e;
       text-align: center;
     }
-    footer a {
-      color: #8b949e;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    footer a:hover {
-      color: #c9f24c;
-    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <nav aria-label="Hauptnavigation">
-      <a href="index.html">Start</a>
-      <a href="ueber-uns.html">Über mich & PiroSoft</a>
-      <a href="barrierefreiheit.html">Barrierefreiheit</a>
+      <a href="index.html">Start</a> |
+      <a href="ueber-uns.html">Über uns</a> |
+      <a href="barrierefreiheit.html">Barrierefreiheit</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutz</a> |
+      <a href="lizenz.html">Lizenzbestimmungen</a> |
+      <a href="quellen.html">Rechtsgrundlagen</a>
     </nav>
 
     <main>
       <h1>Rechtsgrundlagen & Quellenverzeichnis</h1>
-      <p>Systematische Aufstellung der angewandten gesetzlichen Bestimmungen, Normen und Fundstellen nach den jeweiligen Webseiten des Universitätsprojekts.</p>
+      <p style="text-align: center; color: #8b949e; margin-bottom: 35px;">
+        Systematische Aufstellung der angewandten gesetzlichen Bestimmungen, Normen und Fundstellen nach den jeweiligen Webseiten des Universitätsprojekts.
+      </p>
 
       <h2>1. Startseite (index.html)</h2>
-      <div class="ref-card">
+      <div class="source-box">
         <h3>Art. 2 Nr. 1 VO (EU) 2017/745 (MDR)</h3>
         <p>Begriffsbestimmung und Zweckbestimmung: Abgrenzung von reiner Administrationssoftware gegenüber zertifizierungspflichtigen Medizinprodukten.</p>
-        <a href="https://eur-lex.europa.eu/eli/reg/2017/745/oj" target="_blank" rel="noopener">EUR-Lex: Verordnung (EU) 2017/745 (MDR)</a>
+        <a href="https://eur-lex.europa.eu/eli/reg/2017/745/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Verordnung (EU) 2017/745 (MDR)</a>
       </div>
-      <div class="ref-card">
+      <div class="source-box">
         <h3>§ 2 Abs. 1 Urheberrechtsgesetz (UrhG)</h3>
-        <p>Urheberrechtlicher Schutz von Lichtbildwerken: Ausweisung des Bildnachweises (Pixabay) beim Header-Bild.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/1936/111/P2/NOR12018873" target="_blank" rel="noopener">RIS: Urheberrechtsgesetz § 2</a>
+        <p>Urheberrechtlicher Schutz von Lichtbildwerken: Ausweisung des Bildnachweises (Pixabay) beim Praxis-Foto.</p>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/1936/111/P2" target="_blank" rel="noopener noreferrer">RIS: Urheberrechtsgesetz § 2</a>
       </div>
 
-      <h2>2. Über mich & PiroSoft (ueber-uns.html)</h2>
-      <div class="ref-card">
+      <h2>2. Über uns (ueber-uns.html)</h2>
+      <div class="source-box">
         <h3>Art. 5, 9, 25 und 32 DSGVO</h3>
         <p>Grundsätze der Datenminimierung (Art. 5), besondere Kategorien personenbezogener Daten (Art. 9), Datenschutz durch Technikgestaltung (Art. 25) und Datensicherheit (Art. 32).</p>
-        <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">EUR-Lex: Datenschutz-Grundverordnung (DSGVO)</a>
+        <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener noreferrer">EUR-Lex: Datenschutz-Grundverordnung (DSGVO)</a>
       </div>
-      <div class="ref-card">
+      <div class="source-box">
         <h3>§ 1 Markenschutzgesetz (MSchG) & Nizza-Klassifikation</h3>
         <p>Schutzfähigkeit von Wort-Bild-, Bild- und Farbmarken (#C9F24C) sowie Nizza-Klassen 9 (Software) und 42 (SaaS-Dienste).</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/1970/260/P1/NOR12019777" target="_blank" rel="noopener">RIS: Markenschutzgesetz 1970 § 1</a>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/1970/260/P1" target="_blank" rel="noopener noreferrer">RIS: Markenschutzgesetz 1970 § 1</a>
       </div>
 
       <h2>3. Barrierefreiheit (barrierefreiheit.html)</h2>
-      <div class="ref-card">
-        <h3>Web-Zugänglichkeits-Gesetz (WZG) & Richtlinie (EU) 2016/2102</h3>
-        <p>Gesetzliche Vorgaben zur Barrierefreiheit digitaler Angebote gemäß WCAG 2.2 Level AA.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/I/2019/59" target="_blank" rel="noopener">RIS: Web-Zugänglichkeits-Gesetz (WZG)</a>
-      </div>
-      <div class="ref-card">
-        <h3>§ 6 Bundes-Behindertengleichstellungsgesetz (BGStG)</h3>
-        <p>Diskriminierungsverbot beim barrierefreien Zugang zu Dienstleistungen und Informationssystemen.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/I/2005/82/P6/NOR40068593" target="_blank" rel="noopener">RIS: Behindertengleichstellungsgesetz § 6</a>
+      <div class="source-box">
+        <h3>Web-Zugänglichkeits-Gesetz (WZG) & WCAG 2.2 AA</h3>
+        <p>Anforderungen an barrierefreie Informationstechnik, Kontrastverhältnisse (mindestens 4.5:1), Screenreader-Tauglichkeit und Tastaturbedienbarkeit.</p>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/i/2019/59" target="_blank" rel="noopener noreferrer">RIS: Web-Zugänglichkeits-Gesetz (WZG)</a>
       </div>
 
       <h2>4. Impressum (impressum.html)</h2>
-      <div class="ref-card">
-        <h3>§ 5 E-Commerce-Gesetz (ECG) & § 14 Unternehmensgesetzbuch (UGB)</h3>
-        <p>Allgemeine Informationspflichten für Online-Auftritte sowie formelle Firmenangaben für eingetragene Unternehmen.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/I/2001/152/P5/NOR40026851" target="_blank" rel="noopener">RIS: E-Commerce-Gesetz § 5</a>
-      </div>
-      <div class="ref-card">
-        <h3>§ 25 Mediengesetz (MedienG)</h3>
-        <p>Offenlegungspflichten bezüglich des Medieninhabers und redaktioneller Richtlinien.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/1981/314/P25/NOR12014022" target="_blank" rel="noopener">RIS: Mediengesetz § 25</a>
+      <div class="source-box">
+        <h3>§ 5 E-Commerce-Gesetz (ECG) & § 25 Mediengesetz (MedienG)</h3>
+        <p>Allgemeine Informationspflichten für kommerzielle Diensteanbieter sowie Offenlegungspflichten des Medieninhabers im Internet.</p>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/i/2001/152/P5" target="_blank" rel="noopener noreferrer">RIS: E-Commerce-Gesetz § 5</a>
       </div>
 
-      <h2>5. Datenschutzerklärung (datenschutz.html)</h2>
-      <div class="ref-card">
-        <h3>Art. 13 DSGVO & Art. 6 Abs. 1 lit. f DSGVO</h3>
-        <p>Informationspflichten bei Datenerhebung und berechtigtes Interesse bei der Verarbeitung von Server-Logdateien.</p>
-        <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noopener">EUR-Lex: DSGVO Art. 13</a>
-      </div>
-      <div class="ref-card">
-        <h3>§ 165 Abs. 3 Telekommunikationsgesetz 2021 (TKG 2021)</h3>
-        <p>Rechtliche Begründung für den Verzicht auf Cookie-Banner bei rein technisch erforderlicher Auslieferung.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/I/2021/190/P165/NOR40237937" target="_blank" rel="noopener">RIS: Telekommunikationsgesetz 2021 § 165</a>
+      <h2>5. Datenschutz (datenschutz.html)</h2>
+      <div class="source-box">
+        <h3>§ 165 Abs. 3 Telekommunikationsgesetz (TKG 2021)</h3>
+        <p>Rechtliche Begründung für den Verzicht auf ein Cookie-Banner bei rein technisch notwendigen Sitzungsdaten und Verzicht auf Werbetracking.</p>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/i/2021/190/P165" target="_blank" rel="noopener noreferrer">RIS: Telekommunikationsgesetz 2021 § 165</a>
       </div>
 
       <h2>6. Lizenzbestimmungen (lizenz.html)</h2>
-      <div class="ref-card">
-        <h3>§ 1 Abs. 1 Konsumentenschutzgesetz (KSchG)</h3>
-        <p>Rechtssicherer Ausschluss des Verbraucherrechts zur ausschließlichen Begründung von B2B-Geschäftsbeziehungen.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/1979/140/P1/NOR12020268" target="_blank" rel="noopener">RIS: Konsumentenschutzgesetz § 1</a>
-      </div>
-      <div class="ref-card">
-        <h3>§§ 40a ff. Urheberrechtsgesetz (UrhG)</h3>
-        <p>Sonderregeln für Computerprogramme und vertragliche Einräumung von Werknutzungsbewilligungen im SaaS-Betrieb.</p>
-        <a href="https://www.ris.bka.gv.at/eli/bgbl/1936/111/P40a/NOR12018919" target="_blank" rel="noopener">RIS: UrhG § 40a (Computerprogramme)</a>
+      <div class="source-box">
+        <h3>Konsumentenschutzgesetz (KSchG) – B2B-Abgrenzung</h3>
+        <p>Rechtswirksamer Ausschluss von Verbrauchervorschriften durch Fokussierung des SaaS-Vertriebs auf gewerbliche Kunden und freiberufliche Ärzte.</p>
+        <a href="https://www.ris.bka.gv.at/eli/bgbl/1979/140/P1" target="_blank" rel="noopener noreferrer">RIS: Konsumentenschutzgesetz § 1</a>
       </div>
 
       <p style="font-size:13px; color:#8b949e; margin-top:35px;">
-        <em>Hinweis: Dokumentation zur wissenschaftlichen Nachvollziehbarkeit im Rahmen der TU-Wien-Lehrveranstaltung „Daten- und Informatikrecht“.</em>
+        <em>Hinweis: PiroSoft ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026).</em>
       </p>
     </main>
 
     <footer>
       <p>© 2026 Pirosoft GmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
-      <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a> |
-      <a href="lizenz.html">Lizenzbestimmungen</a> |
-      <a href="quellen.html">Rechtsgrundlagen</a>
     </footer>
   </div>
 
