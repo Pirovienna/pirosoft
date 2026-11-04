@@ -11,48 +11,53 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      padding: 40px 20px;
+      padding: 30px 20px 50px 20px;
     }
     .container {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
     }
     nav {
-      margin-bottom: 40px;
+      margin: 0 0 40px 0;
       text-align: center;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #6e7681;
     }
     nav a {
-      color: #c9f24c;
+      color: #ffffff;
       text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-      font-size: 15px;
+      margin: 0 6px;
+      font-weight: 500;
     }
     nav a:hover {
+      color: #c9f24c;
       text-decoration: underline;
     }
     h1 {
       color: #c9f24c;
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: center;
     }
-    h2 {
-      color: #ffffff;
-      font-size: 20px;
-      border-bottom: 1px solid #24262b;
-      padding-bottom: 8px;
-      margin-top: 35px;
-    }
-    p, li {
+    p {
       color: #d1d5db;
       font-size: 16px;
+      margin-bottom: 16px;
     }
-    .box {
+    .story-box {
       background-color: #16181d;
+      border: 1px solid #24262b;
       border-left: 4px solid #c9f24c;
-      padding: 16px 20px;
-      margin: 20px 0;
+      padding: 20px;
       border-radius: 0 8px 8px 0;
+      margin: 30px 0;
+    }
+    .story-box p {
+      margin-bottom: 12px;
+    }
+    .story-box p:last-child {
+      margin-bottom: 0;
     }
     footer {
       margin-top: 60px;
@@ -62,51 +67,34 @@
       color: #8b949e;
       text-align: center;
     }
-    footer a {
-      color: #8b949e;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    footer a:hover {
-      color: #c9f24c;
-    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <nav aria-label="Hauptnavigation">
-      <a href="index.html">Start</a>
-      <a href="ueber-uns.html">Über uns</a>
-      <a href="barrierefreiheit.html">Barrierefreiheit</a>
+      <a href="index.html">Start</a> |
+      <a href="ueber-uns.html">Über uns</a> |
+      <a href="barrierefreiheit.html">Barrierefreiheit</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="datenschutz.html">Datenschutz</a> |
+      <a href="lizenz.html">Lizenzbestimmungen</a> |
+      <a href="quellen.html">Rechtsgrundlagen</a>
     </nav>
 
     <main>
       <h1>Über uns</h1>
-      <p>Mein Name ist Dipl.-Ing. Birol Kılıç. Ich bin Nachrichten- und Informationstechniker (TU Wien) sowie akademisch geprüfter Biomedizintechniker und habe zuvor Medizin studiert.</p>
 
-      <div class="box">
-        <p style="margin:0;">In meiner Familie wurde ich immer „Piro“ genannt. Was der Name bedeutet, wusste ich lange nicht. Erst später habe ich erfahren, dass „Piro“ so viel wie „kleiner Weiser“ heißt und auch für eine vertraute Person stehen kann, die einem zur Seite steht.<br><br>
-        Daher kommt der Name PiroSoft. Gemeinsam mit erfahrenen Programmierern und Beratern habe ich das Projekt ins Leben gerufen. Wir möchten Betriebe im digitalen Alltag begleiten und Lösungen anbieten, die einfach zu verstehen und zu bedienen sind.</p>
+      <p>Mein Name ist Birol Kılıç. Ich habe an der Technischen Universität Wien (TU Wien) Elektrotechnik mit Schwerpunkt Nachrichten- und Informationstechnik studiert und mein Studium als Diplom-Ingenieur abgeschlossen. Darüber hinaus bin ich akademisch geprüfter Biomedizintechniker und habe zuvor fünf Semester Humanmedizin studiert.</p>
+
+      <p>Seit mehr als 25 Jahren bin ich als Unternehmer in diesem Bereich tätig und konnte dabei umfangreiche praktische Erfahrungen sammeln. Heute möchte ich mein technisches und medizinisches Hintergrundwissen sowie meine unternehmerische Erfahrung gezielt in den Dienst von Ärztinnen und Ärzten stellen.</p>
+
+      <p>Mein Ziel ist es, ihnen den beruflichen Alltag durch zuverlässige digitale Lösungen zu erleichtern. Dabei lege ich besonderen Wert darauf, dass diese Lösungen kostengünstig, schnell einsetzbar, einfach zu bedienen und ohne unnötige technische Komplikationen funktionieren. Denn gerade im medizinischen Bereich sollte die Technik den Menschen dienen und nicht zusätzliche Arbeit verursachen.</p>
+
+      <div class="story-box">
+        <p>In meiner Familie wurde ich immer „Piro“ genannt[cite: 19]. Was der Name bedeutet, wusste ich lange nicht[cite: 19]. Erst später habe ich erfahren, dass „Piro“ so viel wie „kleiner Weiser“ heißt und auch für eine vertraute Person stehen kann, die einem zur Seite steht[cite: 19].</p>
+        <p>Daher kommt der Name PiroSoft[cite: 19]. Gemeinsam mit erfahrenen Programmierern und Beratern habe ich das Projekt ins Leben gerufen[cite: 19]. Wir möchten Betriebe im digitalen Alltag begleiten und Lösungen anbieten, die einfach zu verstehen und zu bedienen sind[cite: 19].</p>
       </div>
-
-      <h2>Ausbildung & Werdegang</h2>
-      <p>Ich habe fünf Semester Medizin an einer medizinischen Fakultät in Istanbul studiert. Dann habe ich gemerkt, dass meine Zukunft woanders liegt. Ich ging zuerst an die ETH Zürich und wechselte danach an die TU Wien. Dort habe ich 1993 mein Studium der Elektrotechnik mit Schwerpunkt Nachrichtentechnik als Diplom-Ingenieur abgeschlossen. Zusätzlich habe ich die Ausbildung zum akademisch geprüften Biomedizintechniker absolviert. Bei meiner Sponsionsfeier durfte ich im Namen aller Absolventinnen und Absolventen die Festrede halten.</p>
-      <p>Bereits während meines Studiums war ich ab Jänner 1992 einige Jahre am EDV-Zentrum der TU Wien als Oracle-Systembetreuer für den gesamten Campus tätig. Ich war Ansprechpartner für alle produktbezogenen Fragen und Anlaufstelle bei technischen Problemen. Aus dieser Zeit stammt meine praktische Erfahrung mit relationalen Datenbanken.</p>
-
-      <h2>PiroMed Office</h2>
-      <p>Seit mehr als 30 Jahren bin ich Unternehmer, vor allem im Verlagswesen. Mit PiroSoft kehre ich zu meinen technischen Wurzeln zurück.</p>
-      <p>Mit PiroMed Office planen wir eine einfach zu bedienende Software für die Organisation des Praxisalltags. Sie soll bei der Terminplanung, bei organisatorischen Aufgaben und bei der Erstellung automatisierter Berichte helfen. Dafür arbeiten wir mit relationalen Datenbanken.</p>
-      <p>Gerade im medizinischen Bereich ist der Datenschutz besonders wichtig. Soweit personenbezogene Gesundheitsdaten verarbeitet werden, müssen die besonderen Anforderungen der Datenschutz-Grundverordnung (DSGVO), insbesondere Artikel 9, berücksichtigt werden. Wir möchten deshalb von Anfang an auf Datenminimierung (Art. 5 Abs. 1 lit. c DSGVO), Datenschutz durch Technikgestaltung (Art. 25 DSGVO), klare Zugriffsrechte und eine sichere Verarbeitung (Art. 32 DSGVO) achten.</p>
-      <p>Unsere Kunden sollen die Software einfach nutzen können und bei technischen Problemen persönliche Unterstützung erhalten. Dazu gehört auch ein vertraglich geregelter technischer Support.</p>
-
-      <h2>Markenformen & Klassifikation</h2>
-      <ul>
-        <li><strong>Wort-Bild-Marke:</strong> Name „PiroSoft“ in charakteristischer Typografie auf dunklem Grund.</li>
-        <li><strong>Bildmarke:</strong> Das reduzierte grafische Bildzeichen als Erkennungsmerkmal.</li>
-        <li><strong>Farbmarke:</strong> Pirosoft-Neongrün (#C9F24C) als Leitfarbe für Oberflächenelemente.</li>
-        <li><strong>Nizza-Klassen:</strong> Klasse 9 (Softwareprodukte für die Praxisorganisation) und Klasse 42 (Software as a Service / SaaS-Bereitstellung).</li>
-      </ul>
 
       <p style="font-size:13px; color:#8b949e; margin-top:35px;">
         <em>Hinweis: PiroSoft ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026).</em>
@@ -115,13 +103,8 @@
 
     <footer>
       <p>© 2026 Pirosoft GmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
-      <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a> |
-      <a href="lizenz.html">Lizenzbestimmungen</a> |
-      <a href="quellen.html">Rechtsgrundlagen</a>
     </footer>
   </div>
 
 </body>
-</html>
 </html>
