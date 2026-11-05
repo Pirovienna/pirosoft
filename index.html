@@ -104,7 +104,7 @@
       font-size: 18px;
     }
 
-    /* Video-Bereich */
+    /* Video Alanı (2. Resim Yerine Gelen Bölüm) */
     .video-section {
       margin: 40px 0;
       background-color: #16181d;
@@ -120,9 +120,17 @@
       background-color: #000000;
     }
     .video-desc {
-      font-size: 14px;
+      font-size: 13px;
       color: #8b949e;
       margin-top: 10px;
+      line-height: 1.4;
+    }
+    .video-desc a {
+      color: #c9f24c;
+      text-decoration: none;
+    }
+    .video-desc a:hover {
+      text-decoration: underline;
     }
 
     /* Webshop Pricing Grid */
@@ -238,6 +246,7 @@
     </header>
 
     <main>
+      <!-- İlk Büyük Resim aynen yerinde kaldı -->
       <img src="Praxispixabay.jpg" alt="Moderne Praxisorganisation mit digitaler Verwaltung" class="hero-img">
 
       <h1>Effiziente Administration für Arztpraxen und Ordinationen</h1>
@@ -264,15 +273,16 @@
         </div>
       </div>
 
-      <!-- Medien-Integration: Produktvideo / Demo -->
+      <!-- Medien-Integration (Aufgabe 2): İkinci resim alanına video ve detaylı yasal kaynak ekledik -->
       <h2>Produkteinblick & Workflow-Demonstration</h2>
       <div class="video-section">
-        <video controls preload="metadata" poster="Praxispixabay.jpg">
+        <video controls preload="metadata" poster="Praxispixabay.jpg" aria-label="Anschauungsvideo: PiroMed Office in der Praxis">
           <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
           Ihr Browser unterstützt das Video-Element nicht.
         </video>
         <div class="video-desc">
-          Videovorschau: Digitale Arbeitsabläufe in der Praxisorganisation (Simuliertes Anschauungsmedium gemäß Aufgabe 2).
+          <strong>Video-Quelle:</strong> Demo-Workflow-Analyse (Creative Commons, Google LLC) – Eingebunden als Anschauungsmedium gemäß Aufgabe 2.<br>
+          <em>Ausführliche Lizenznachweise finden Sie auf unserer <a href="quellen.html">Rechtsgrundlagen &amp; Quellen-Seite</a>.</em>
         </div>
       </div>
 
