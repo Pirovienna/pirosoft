@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PiroMed Office - PiroSoft</title>
+  <title>PiroMed Office - Strukturierte Praxisorganisation</title>
   <style>
     body {
       margin: 0;
@@ -11,88 +11,67 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      padding: 10px 20px 50px 20px;
+      padding: 25px 20px 50px 20px;
     }
     .container {
-      max-width: 1000px;
+      max-width: 860px;
       margin: 0 auto;
     }
     header {
       text-align: center;
-      margin: 0;
-      padding: 0;
+      margin-bottom: 30px;
     }
-    .logo {
-      max-width: 340px;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto -28px auto;
+    .brand-title {
+      font-size: 38px;
+      font-weight: 800;
+      color: #c9f24c;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .brand-title a {
+      color: #c9f24c;
+      text-decoration: none;
+    }
+    .brand-claim {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.6px;
+      color: #9da7b3;
+      margin-bottom: 25px;
     }
     nav {
-      margin: 0 0 12px 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-bottom: 35px;
+      text-align: center;
       font-size: 15px;
+      line-height: 1.6;
       color: #6e7681;
-      box-sizing: border-box;
     }
     nav a {
       color: #ffffff;
       text-decoration: none;
+      margin: 0 6px;
       font-weight: 500;
-      white-space: nowrap;
     }
     nav a:hover {
       color: #c9f24c;
       text-decoration: underline;
     }
-    .separator {
-      color: #6e7681;
-      user-select: none;
-    }
     .hero-img {
       width: 100%;
-      max-height: 480px;
-      object-fit: cover;
+      height: auto;
       border-radius: 8px;
-      margin-top: 5px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-      display: block;
-    }
-    .img-caption {
-      font-size: 12px;
-      color: #8b949e;
-      text-align: center;
-      margin-top: 8px;
-      margin-bottom: 25px;
-    }
-    .hero-title-area {
-      text-align: center;
       margin-bottom: 35px;
+      display: block;
     }
     h1 {
       color: #ffffff;
-      font-size: 36px;
-      margin: 0 0 8px 0;
-      font-weight: bold;
-      letter-spacing: -0.5px;
-    }
-    .hero-subtitle {
-      font-size: 17px;
-      color: #d1d5db;
-      margin: 0 auto;
-      max-width: 750px;
-    }
-    .content-area {
-      max-width: 860px;
-      margin: 0 auto;
+      font-size: 26px;
+      margin-bottom: 15px;
+      text-align: center;
     }
     h2 {
       color: #ffffff;
-      font-size: 22px;
+      font-size: 20px;
       border-bottom: 1px solid #24262b;
       padding-bottom: 8px;
       margin-top: 35px;
@@ -101,47 +80,26 @@
       color: #d1d5db;
       font-size: 16px;
     }
-    .feature-grid {
+    .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-top: 20px;
+      gap: 20px;
+      margin-top: 25px;
     }
-    @media (max-width: 700px) {
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-      }
-      .separator {
-        display: none;
-      }
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
     }
-    .feature-card {
+    .card {
       background-color: #16181d;
       border: 1px solid #24262b;
-      border-left: 4px solid #c9f24c;
-      padding: 18px;
-      border-radius: 0 8px 8px 0;
+      border-top: 3px solid #c9f24c;
+      padding: 20px;
+      border-radius: 6px;
     }
-    .feature-card h3 {
+    .card h3 {
       color: #c9f24c;
       margin-top: 0;
       font-size: 18px;
-    }
-    .feature-card p {
-      margin-bottom: 0;
-      font-size: 15px;
-    }
-    .notice-box {
-      background-color: #16181d;
-      border: 1px solid #24262b;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 35px 0;
     }
     footer {
       margin-top: 60px;
@@ -157,71 +115,54 @@
 
   <div class="container">
     <header>
-      <img src="logopiro..png" alt="PiroSoft Firmenlogo" class="logo">
+      <div class="brand-title"><a href="index.html">PiroMed Office</a></div>
+      <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
+
       <nav aria-label="Hauptnavigation">
-        <a href="index.html">Start</a>
-        <span class="separator">|</span>
-        <a href="ueber-uns.html">Über uns</a>
-        <span class="separator">|</span>
-        <a href="barrierefreiheit.html">Barrierefreiheit</a>
-        <span class="separator">|</span>
-        <a href="impressum.html">Impressum</a>
-        <span class="separator">|</span>
-        <a href="datenschutz.html">Datenschutz</a>
-        <span class="separator">|</span>
-        <a href="lizenz.html">Lizenzbestimmungen</a>
-        <span class="separator">|</span>
+        <a href="index.html">Start</a> |
+        <a href="ueber-uns.html">Über uns</a> |
+        <a href="barrierefreiheit.html">Barrierefreiheit</a> |
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a> |
+        <a href="lizenz.html">Lizenzbestimmungen</a> |
         <a href="quellen.html">Rechtsgrundlagen</a>
       </nav>
     </header>
 
     <main>
-      <img src="Praxispixabay.jpg" alt="Moderne Arztpraxis mit organisierter Ausstattung" class="hero-img">
-      <div class="img-caption">Bildnachweis: Lizenzfreies Symbolfoto via Pixabay gem. § 2 UrhG</div>
+      <img src="Praxispixabay.jpg" alt="Moderne Praxisorganisation mit digitaler Verwaltung" class="hero-img">
 
-      <div class="hero-title-area">
-        <h1>PiroMed Office</h1>
-        <p class="hero-subtitle">
-          Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen
-        </p>
+      <h1>Effiziente Administration für Arztpraxen und Ordinationen</h1>
+      <p style="text-align: center; color: #8b949e; max-width: 700px; margin: 0 auto 30px auto;">
+        Entlasten Sie Ihr Praxisteam durch automatisierte Abläufe, strukturierte Terminplanung und datenschutzkonforme Berichtsgenerierung – ganz ohne bürokratischen Mehraufwand.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Terminmanagement</h3>
+          <p>Übersichtliche Kalenderführung mit Erinnerungsfunktionen, optimiert für den reibungslosen Praxisbetrieb und minimale Wartezeiten.</p>
+        </div>
+        <div class="card">
+          <h3>Automatisierte Berichte</h3>
+          <p>Schnelle Erstellung von administrativen Auswertungen, Leistungsnachweisen und Organisationsberichten auf Knopfdruck.</p>
+        </div>
+        <div class="card">
+          <h3>B2B & DSGVO-Konformität</h3>
+          <p>Maßgeschneidert für Ordinationen und medizinische Versorgungszentren – strikte Trennung von Verwaltungsdaten und höchste Datensicherheit.</p>
+        </div>
+        <div class="card">
+          <h3>Kein Medizinprodukt (MDR-frei)</h3>
+          <p>Fokus rein auf organisatorische Praxisabläufe. Keine diagnostischen Berechnungen, daher rechtssicher ohne regulatorische Hürden einsetzbar.</p>
+        </div>
       </div>
 
-      <div class="content-area">
-        <h2>Verlässliche Abläufe im Praxisalltag</h2>
-        <p>PiroMed Office ist eine webbasierte Anwendung zur administrativen Verwaltung von Arztpraxen und Gruppenpraxen. Die Lösung bündelt Kalenderführung, interne Aufgabenlisten und automatisierte Auswertungen auf einer zentralen Plattform.</p>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <h3>Terminmanagement</h3>
-            <p>Klare Kalenderansichten, Vermeidung von Überschneidungen und automatische Terminerinnerungen für einen geregelten Ordinationsablauf.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Praxisberichte (SQR)</h3>
-            <p>Automatisierte Generierung von Übersichten zu Auslastung und Terminfrequenzen auf Basis relationaler Abfragen.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Aufgabenverteilung</h3>
-            <p>Zuweisung interner administrativer Aufgaben an das Praxisteam mit übersichtlicher Statuskontrolle.</p>
-          </div>
-          <div class="feature-card">
-            <h3>Datensicherheit (DSGVO)</h3>
-            <p>Rollenbasierte Zugriffsrechte und verschlüsselte Datenverarbeitung gemäß den Vorgaben der Art. 25 und 32 DSGVO.</p>
-          </div>
-        </div>
-
-        <div class="notice-box">
-          <h3 style="color:#ffffff; margin-top:0;">Rechtliche Einordnung & Zweckbestimmung</h3>
-          <p style="margin-bottom:0;">PiroMed Office unterstützt ausschließlich organisatorische und verwaltungstechnische Arbeitsabläufe in der Praxis. Die Software stellt keine Diagnosen, führt keine Risikoberechnungen durch und gibt keine medizinischen Behandlungsempfehlungen ab. Sie unterliegt daher nicht der Verordnung (EU) 2017/745 über Medizinprodukte (MDR).</p>
-        </div>
-
-        <p style="font-size:13px; color:#8b949e; margin-top:35px;">
-          <em>Hinweis: PiroSoft ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026).</em>
-        </p>
-      </div>
+      <p style="font-size:13px; color:#8b949e; margin-top:35px; text-align: center;">
+        <em>Hinweis: PiroMed Office ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026).</em>
+      </p>
     </main>
 
     <footer>
-      <p>© 2026 Pirosoft GmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
+      <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
     </footer>
   </div>
 
