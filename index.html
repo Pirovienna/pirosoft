@@ -115,7 +115,7 @@
     }
     .video-section video {
       width: 100%;
-      max-height: 400px;
+      max-height: 420px;
       border-radius: 6px;
       background-color: #000000;
       display: block;
@@ -274,17 +274,17 @@
         </div>
       </div>
 
-      <!-- Video-Integration (Aufgabe 2) -->
+      <!-- Video-Integration (Aufgabe 2) mit Poster und automatischem Reset -->
       <h2>Produkteinblick &amp; Workflow-Demonstration</h2>
       <div class="video-section">
-        <video controls preload="metadata" poster="Praxispixabay.jpg" aria-label="Anschauungsvideo: PiroMed Office in der Praxis">
+        <video controls preload="metadata" poster="Praxispixabay.jpg" onended="this.load();" aria-label="Anschauungsvideo: PiroMed Office in der Praxis">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-doctor-working-on-a-computer-42034-large.mp4" type="video/mp4">
           <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
           Ihr Browser unterstützt das Video-Element nicht.
         </video>
         <div class="video-desc">
-          <strong>Video-Quelle:</strong> Open-Media-Demonstration (Creative Commons Zero / Open Source) – Eingebunden als Anschauungsmedium gemäß Aufgabe 2.<br>
-          <em>Detaillierte Lizenz- und Urheberrechtsnachweise finden Sie auf unserer <a href="quellen.html">Rechtsgrundlagen &amp; Quellen-Seite</a>.</em>
+          <strong>Video-Quelle:</strong> Demo-Workflow-Analyse (Klinik- und Praxisadministration, Lizenz: Free Commercial Use / Open Access) – Eingebunden als Anschauungsmedium gemäß Aufgabe 2.<br>
+          <em>Detaillierte Urheberrechts- und Lizenznachweise finden Sie auf unserer <a href="quellen.html">Rechtsgrundlagen &amp; Quellen-Seite</a>.</em>
         </div>
       </div>
 
