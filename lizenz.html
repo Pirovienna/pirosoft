@@ -11,14 +11,25 @@
       color: #ffffff;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      padding: 30px 20px 50px 20px;
+      padding: 10px 20px 50px 20px;
     }
     .container {
       max-width: 860px;
       margin: 0 auto;
     }
+    header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .logo {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto -24px auto;
+    }
     nav {
-      margin: 0 0 40px 0;
+      margin: 0 0 25px 0;
       text-align: center;
       font-size: 15px;
       line-height: 1.6;
@@ -34,10 +45,29 @@
       color: #c9f24c;
       text-decoration: underline;
     }
+    .product-banner {
+      background-color: #16181d;
+      border: 1px solid #24262b;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin: 15px auto 30px auto;
+      text-align: center;
+    }
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+    }
+    .product-claim {
+      font-size: 14px;
+      color: #c9f24c;
+      margin-top: 3px;
+    }
     h1 {
       color: #c9f24c;
-      font-size: 32px;
-      margin-bottom: 20px;
+      font-size: 30px;
+      margin-bottom: 15px;
       text-align: center;
     }
     h2 {
@@ -53,7 +83,6 @@
     }
     .box {
       background-color: #16181d;
-      border: 1px solid #24262b;
       border-left: 4px solid #c9f24c;
       padding: 16px 20px;
       margin: 20px 0;
@@ -72,15 +101,23 @@
 <body>
 
   <div class="container">
-    <nav aria-label="Hauptnavigation">
-      <a href="index.html">Start</a> |
-      <a href="ueber-uns.html">Über uns</a> |
-      <a href="barrierefreiheit.html">Barrierefreiheit</a> |
-      <a href="impressum.html">Impressum</a> |
-      <a href="datenschutz.html">Datenschutz</a> |
-      <a href="lizenz.html">Lizenzbestimmungen</a> |
-      <a href="quellen.html">Rechtsgrundlagen</a>
-    </nav>
+    <header>
+      <a href="index.html"><img src="logopiro..png" alt="PiroSoft Firmenlogo" class="logo"></a>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Start</a> |
+        <a href="ueber-uns.html">Über uns</a> |
+        <a href="barrierefreiheit.html">Barrierefreiheit</a> |
+        <a href="impressum.html">Impressum</a> |
+        <a href="datenschutz.html">Datenschutz</a> |
+        <a href="lizenz.html">Lizenzbestimmungen</a> |
+        <a href="quellen.html">Rechtsgrundlagen</a>
+      </nav>
+
+      <div class="product-banner">
+        <div class="product-name">PiroMed Office</div>
+        <div class="product-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
+      </div>
+    </header>
 
     <main>
       <h1>Nutzungs- und Lizenzbedingungen</h1>
