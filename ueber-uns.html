@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über uns & Markenstrategie - PiroMed Office</title>
+  <title>Über uns &amp; Markenstrategie - PiroMed Office</title>
   <style>
     body {
       margin: 0;
@@ -72,6 +72,45 @@
     p, li {
       color: #d1d5db;
       font-size: 16px;
+    }
+    .history-card {
+      background-color: #16181d;
+      border: 1px solid #24262b;
+      border-left: 4px solid #c9f24c;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+    .gallery-item {
+      background-color: #16181d;
+      border: 1px solid #24262b;
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+      background-color: #0d0e11;
+    }
+    .gallery-caption {
+      padding: 10px 12px;
+      font-size: 13px;
+      color: #9da7b3;
+      line-height: 1.4;
+      border-top: 1px solid #24262b;
     }
     .brand-box {
       background-color: #16181d;
@@ -150,15 +189,42 @@
 
     <main>
       <h1>Über uns &amp; Markenstrategie</h1>
-      <p style="text-align: center; color: #8b949e;">Informationen über das Unternehmen, unser Produkt sowie die kennzeichenrechtliche Dokumentation gemäß Aufgabe 3.</p>
+      <p style="text-align: center; color: #8b949e;">Unternehmensprofil, akademische Historie an der TU Wien sowie die kennzeichenrechtliche Dokumentation gemäß Aufgabe 3.</p>
 
       <h2>Unternehmensprofil &amp; Gründer</h2>
       <p>
-        <strong>PiroMed Office GesmbH</strong> ist ein österreichisches Software-Start-up mit Sitz in 1060 Wien (Webgasse 12/9). Gegründet von <strong>Dipl.-Ing. Birol Kılıç</strong> (Absolvent der Technischen Universität Wien im Bereich Elektrotechnik und Biomedizinische Technik), hat sich das Unternehmen auf hochspezialisierte, webbasierte Organisationslösungen für Arztpraxen, Ordinationen und Gruppenpraxen spezialisiert.
+        <strong>PiroMed Office GesmbH</strong> ist ein österreichisches Software-Start-up mit Sitz in 1060 Wien (Webgasse 12/9). Gegründet von <strong>Dipl.-Ing. Birol Kılıç</strong>, hat sich das Unternehmen auf praxistaugliche, hochsichere Software-Infrastruktur für Ordinationen, Ärztezentren und medizinische Dienstleister spezialisiert.
       </p>
-      <p>
-        Unser Kernprodukt <em>PiroMed Office</em> dient der rein administrativen Strukturierung des Ordinationsalltags (Terminmanagement, Auswertungen, Leistungsdokumentation) und ist strikt kein Medizinprodukt im Sinne der EU-MDR.
-      </p>
+
+      <div class="history-card">
+        <h3 style="color: #c9f24c; margin-top: 0; font-size: 18px;">Akademische Wurzeln an der Technischen Universität Wien</h3>
+        <p style="margin-bottom: 0;">
+          „Nach meinen ersten Studienprüfungen 1986 an der ETH Zürich setzte ich meine Ausbildung aus familiären Gründen an der Technischen Universität Wien fort und schloss mein Ingenieurstudium hier als Dipl.-Ing. erfolgreich ab. Neben meiner Tätigkeit als zentraler ORACLE-Systembetreuer am EDV-Zentrum der TU Wien wurde mir zum Studienabschluss eine besondere Ehre zuteil: Die Fakultät für Elektrotechnik bat mich, bei der offiziellen Sponsionsfeier die Festansprache stellvertretend für alle meine Mitstudierenden zu halten.“
+        </p>
+      </div>
+
+      <!-- Galerie: Historische Dokumente & Aufnahmen der TU Wien -->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="tu-rede.jpg" alt="Dipl.-Ing. Birol Kılıç bei der Festansprache zur Sponsion an der TU Wien">
+          <div class="gallery-caption"><strong>Festansprache:</strong> Dipl.-Ing. Birol Kılıç im Namen aller Absolventen der Fakultät für Elektrotechnik.</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="tu-bestaetigung.jpg" alt="Offizielle Bestätigung des EDV-Zentrums der TU Wien über die ORACLE-Systembetreuung (1993)" style="object-position: top;">
+          <div class="gallery-caption"><strong>Offizielle Bestätigung (1993):</strong> ORACLE-Systembetreuer für den gesamten Campus der TU Wien.</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="tu-urkunde.jpg" alt="Verleihung der Diplomurkunde durch den Dekan an der TU Wien">
+          <div class="gallery-caption"><strong>Akademischer Abschluss:</strong> Überreichung der Urkunde bei der feierlichen Sponsion an der TU Wien.</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="tu-absolventen.jpg" alt="Die Absolventinnen und Absolventen bei der feierlichen Zeremonie im Festsaal der TU Wien">
+          <div class="gallery-caption"><strong>Feierliche Sponsion:</strong> Der Absolventenjahrgang der Technischen Universität Wien.</div>
+        </div>
+      </div>
 
       <h2>Markendokumentation &amp; Schutzformen (Aufgabe 3)</h2>
       <p>
@@ -241,4 +307,4 @@
   </div>
 
 </body>
-</html>
+</html>>
