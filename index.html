@@ -60,8 +60,22 @@
       width: 100%;
       height: auto;
       border-radius: 8px;
-      margin-bottom: 35px;
       display: block;
+    }
+    .image-caption {
+      font-size: 12px;
+      color: #8b949e;
+      text-align: right;
+      margin-top: 8px;
+      margin-bottom: 35px;
+      font-family: Arial, sans-serif;
+    }
+    .image-caption a {
+      color: #c9f24c;
+      text-decoration: none;
+    }
+    .image-caption a:hover {
+      text-decoration: underline;
     }
     h1 {
       color: #ffffff;
@@ -248,8 +262,13 @@
     </header>
 
     <main>
-      <!-- İlk Resim: Ekip & Bilgisayar Ekranı -->
-      <img src="Praxispixabay.jpg" alt="Moderne Praxisorganisation mit digitaler Verwaltung" class="hero-img">
+      <!-- Hero-Görsel ve Yasal Telif Bildirimi (§ 74 UrhG) -->
+      <figure style="margin: 0;">
+        <img src="Praxispixabay.jpg" alt="Moderne Praxisorganisation mit digitaler Verwaltung" class="hero-img">
+        <figcaption class="image-caption">
+          Bildnachweis: © Pixabay / KI-generiert (Pixabay Content License)
+        </figcaption>
+      </figure>
 
       <h1>Effiziente Administration für Arztpraxen und Ordinationen</h1>
       <p style="text-align: center; color: #8b949e; max-width: 700px; margin: 0 auto 30px auto;">
@@ -275,7 +294,7 @@
         </div>
       </div>
 
-      <!-- Video-Integration (Aufgabe 2) mit neuem Stethoskop-Poster -->
+      <!-- Video-Integration (Aufgabe 2) -->
       <h2>Produkteinblick &amp; Workflow-Demonstration</h2>
       <div class="video-section">
         <video controls preload="metadata" poster="arzt-poster.jpg" onended="this.load();" aria-label="Anschauungsvideo: PiroMed Office in der Praxis">
