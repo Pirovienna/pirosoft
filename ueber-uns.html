@@ -64,100 +64,182 @@
     }
     h2 {
       color: #ffffff;
-      font-size: 20px;
+      font-size: 22px;
       border-bottom: 1px solid #24262b;
       padding-bottom: 8px;
-      margin-top: 35px;
+      margin-top: 45px;
+      text-align: left;
     }
     p, li {
       color: #d1d5db;
-      font-size: 16px;
+      font-size: 15px;
     }
-    .history-card {
+    .subtitle {
+      text-align: center;
+      color: #8b949e;
+      font-size: 14px;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+    .box-info {
       background-color: #16181d;
       border: 1px solid #24262b;
       border-left: 4px solid #c9f24c;
-      border-radius: 6px;
-      padding: 20px;
-      margin: 20px 0;
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin-top: 20px;
+      margin-bottom: 25px;
     }
-    .gallery-grid {
+    .box-info h3 {
+      color: #c9f24c;
+      margin-top: 0;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+    .box-info p {
+      margin: 0;
+      font-size: 14px;
+      color: #c9d1d9;
+    }
+    /* Fotoğraf Galerisi */
+    .photo-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
-      margin-top: 20px;
+      margin-bottom: 35px;
     }
-    @media (max-width: 600px) {
-      .gallery-grid { grid-template-columns: 1fr; }
-    }
-    .gallery-item {
+    .photo-item {
       background-color: #16181d;
       border: 1px solid #24262b;
       border-radius: 6px;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
     }
-    .gallery-item img {
+    .photo-item img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       display: block;
-      background-color: #0d0e11;
     }
-    .gallery-caption {
+    .photo-caption {
       padding: 10px 12px;
-      font-size: 13px;
-      color: #9da7b3;
+      font-size: 12px;
+      color: #8b949e;
       line-height: 1.4;
-      border-top: 1px solid #24262b;
+      background-color: #16181d;
     }
-    .brand-box {
+    .photo-caption strong {
+      color: #ffffff;
+    }
+    /* Marka Kartları */
+    .brand-card {
       background-color: #16181d;
       border: 1px solid #24262b;
       border-radius: 8px;
-      padding: 22px;
-      margin-top: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
     }
-    .brand-display {
+    .brand-card h3 {
+      color: #ffffff;
+      font-size: 17px;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+    .brand-preview-box {
       background-color: #0d0e11;
       border: 1px dashed #30363d;
       border-radius: 6px;
-      padding: 25px;
+      padding: 30px;
       text-align: center;
       margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-sample {
+      display: inline-flex;
+      align-items: center;
+      font-size: 26px;
+      font-weight: 800;
+      font-family: Arial, sans-serif;
+    }
+    .icon-cross {
+      width: 32px;
+      height: 32px;
+      background-color: #c9f24c;
+      color: #121316;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      margin-right: 12px;
+      line-height: 1;
+    }
+    .icon-cross-signet {
+      width: 44px;
+      height: 44px;
+      border: 2px solid #c9f24c;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #c9f24c;
+      font-size: 28px;
+      font-weight: 800;
     }
     .color-swatch {
-      width: 90px;
-      height: 90px;
+      width: 60px;
+      height: 60px;
       background-color: #c9f24c;
-      border-radius: 8px;
-      margin: 0 auto 10px auto;
-      border: 2px solid #ffffff;
+      border-radius: 6px;
+      margin: 0 auto 8px auto;
     }
-    .badge {
-      display: inline-block;
-      background-color: #24262b;
-      color: #c9f24c;
-      padding: 3px 8px;
-      border-radius: 4px;
+    .color-label {
+      font-family: monospace;
       font-size: 13px;
-      font-weight: bold;
+      color: #8b949e;
     }
+    .color-label span {
+      background-color: #21262d;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #c9f24c;
+    }
+    .brand-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #c9d1d9;
+    }
+    /* Tablo */
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 15px;
+      margin-bottom: 30px;
+      background-color: #16181d;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid #24262b;
     }
     th, td {
-      border: 1px solid #24262b;
-      padding: 10px;
+      padding: 12px 14px;
       text-align: left;
       font-size: 14px;
+      border-bottom: 1px solid #24262b;
     }
     th {
-      background-color: #16181d;
+      background-color: #1f2229;
       color: #c9f24c;
+      font-weight: 600;
+    }
+    td:first-child {
+      font-weight: bold;
+      color: #c9f24c;
+      width: 110px;
+    }
+    td:last-child {
+      color: #c9d1d9;
     }
     footer {
       margin-top: 60px;
@@ -166,6 +248,9 @@
       font-size: 14px;
       color: #8b949e;
       text-align: center;
+    }
+    @media (max-width: 600px) {
+      .photo-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -189,119 +274,141 @@
 
     <main>
       <h1>Über uns &amp; Markenstrategie</h1>
-      <p style="text-align: center; color: #8b949e;">Unternehmensprofil, technischer Hintergrund sowie kennzeichenrechtliche Dokumentation gemäß Aufgabe 3.</p>
+      <p class="subtitle">Hintergrund zum Projekt, Werdegang des Gründers und gewählte Markenformen (Aufgabe 3)</p>
 
       <h2>Unternehmensprofil &amp; Gründer</h2>
       <p>
-        <strong>PiroMed Office GesmbH</strong> ist ein österreichisches Softwareunternehmen mit Sitz in 1060 Wien (Webgasse 12/9). Gegründet von <strong>Dipl.-Ing. Birol Kılıç</strong>, entwickelt das Unternehmen standardisierte, hochsichere Software-Infrastruktur für Ordinationen, Ärztezentren und medizinische Dienstleister.
+        <strong>PiroMed Office GesmbH</strong> ist ein österreichisches Softwareprojekt mit Sitz in 1060 Wien (Webgasse 12/9). 
+        Gegründet von <strong>Dipl.-Ing. Birol Kılıç</strong>, entwickelt das Projekt verlässliche und einfach bedienbare 
+        Verwaltungssoftware für Arztpraxen, Ordinationen und medizinische Dienstleister.
       </p>
 
-      <div class="history-card">
-        <h3 style="color: #c9f24c; margin-top: 0; font-size: 18px;">Technischer Hintergrund &amp; Ausbildung</h3>
-        <p style="margin-bottom: 0;">
-          Nach Studienabschnitten ab 1986 an der ETH Zürich erfolgte der erfolgreiche Abschluss des Studiums der Elektrotechnik an der Technischen Universität Wien mit dem akademischen Grad Dipl.-Ing. Im Rahmen der offiziellen Sponsionsfeier hielt Dipl.-Ing. Birol Kılıç die Festansprache im Namen der Absolventinnen und Absolventen. Die datenbanktechnische Basis des Unternehmens gründet auf langjähriger Praxiserfahrung, unter anderem ab 1992 als zentraler ORACLE-Systembetreuer für das EDV-Zentrum der TU Wien.
+      <div class="box-info">
+        <h3>Ausbildung &amp; technischer Hintergrund</h3>
+        <p>
+          Nach ersten Studienabschnitten an der ETH Zürich schloss Birol Kılıç sein Studium der Elektrotechnik 
+          an der Technischen Universität Wien als Diplomingenieur ab. Bei der offiziellen Sponsionsfeier hielt er die 
+          Festrede für die Absolventinnen und Absolventen. Die technische Basis für PiroMed Office basiert auf langjähriger 
+          Praxiserfahrung, unter anderem ab 1992 als Systembetreuer für ORACLE-Datenbanken am EDV-Zentrum der TU Wien.
         </p>
       </div>
 
-      <!-- Galerie: Sachliche Dokumentation TU Wien -->
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="tu-rede.jpg" alt="Dipl.-Ing. Birol Kılıç bei der Festansprache zur Sponsion an der TU Wien">
-          <div class="gallery-caption"><strong>Festansprache:</strong> Dipl.-Ing. Birol Kılıç im Namen der Absolventen der Fakultät für Elektrotechnik.</div>
+      <!-- Resimler: Sponsion ve TU Wien Belgeleri -->
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="festansprache.jpg" alt="Dipl.-Ing. Birol Kılıç hält die Festansprache">
+          <div class="photo-caption">
+            <strong>Festrede:</strong> Dipl.-Ing. Birol Kılıç im Namen der Absolventen der Fakultät für Elektrotechnik.
+          </div>
         </div>
-
-        <div class="gallery-item">
-          <img src="tu-bestaetigung.jpg" alt="Bestätigung des EDV-Zentrums der TU Wien über die ORACLE-Systembetreuung (1993)" style="object-position: top;">
-          <div class="gallery-caption"><strong>EDV-Zentrum TU Wien (1993):</strong> Bestätigung der ORACLE-Systembetreuung für den Campus.</div>
+        <div class="photo-item">
+          <img src="tu-bestaetigung.jpg" alt="Bestätigung des EDV-Zentrums der TU Wien von 1993">
+          <div class="photo-caption">
+            <strong>EDV-Zentrum TU Wien (1993):</strong> Bestätigung über die ORACLE-Systembetreuung am Campus.
+          </div>
         </div>
-
-        <div class="gallery-item">
-          <img src="tu-urkunde.jpg" alt="Überreichung der Diplomurkunde durch den Dekan der Fakultät für Elektrotechnik an der TU Wien">
-          <div class="gallery-caption"><strong>Akademischer Abschluss:</strong> Überreichung der Urkunde durch den Dekan der Fakultät für Elektrotechnik (TU Wien).</div>
+        <div class="photo-item">
+          <img src="diplom-uebergabe.jpg" alt="Verleihung des Diploms durch den Dekan">
+          <div class="photo-caption">
+            <strong>Studienabschluss:</strong> Übergabe der Urkunde durch den Dekan der Fakultät für Elektrotechnik.
+          </div>
         </div>
-
-        <div class="gallery-item">
-          <img src="tu-absolventen.jpg" alt="Absolventinnen und Absolventen bei der Zeremonie im Festsaal der TU Wien">
-          <div class="gallery-caption"><strong>Absolventenjahrgang:</strong> Offizielle Zeremonie an der Technischen Universität Wien.</div>
+        <div class="photo-item">
+          <img src="absolventen-jahrgang.jpg" alt="Absolventenjahrgang an der TU Wien">
+          <div class="photo-caption">
+            <strong>Absolventenjahrgang:</strong> Offizielle Zeremonie im Festsaal der TU Wien.
+          </div>
         </div>
       </div>
 
-      <h2>Markendokumentation &amp; Schutzformen (Aufgabe 3)</h2>
+      <h2>Markenformen für das Projekt (Aufgabe 3)</h2>
       <p>
-        Gemäß den Vorgaben der Lehrveranstaltung wurden drei voneinander unabhängige, distinkte Markenformen definiert (da eine reine Wortmarke und eine Wort-Bildmarke als redundant gelten).
+        Für die Lehrveranstaltung wurden drei unterschiedliche Markenformen gewählt, da eine reine Wortmarke und eine Wort-Bildmarke hier als zu ähnlich gelten:
       </p>
 
-      <!-- Markenform 1: Wort-Bildmarke -->
-      <div class="brand-box">
+      <!-- 1. Wort-Bildmarke -->
+      <div class="brand-card">
         <h3>1. Wort-Bildmarke (Kombinierte Marke)</h3>
-        <div class="brand-display">
-          <svg width="240" height="48" viewBox="0 0 240 48" aria-label="Logo Wort-Bildmarke PiroMed Office">
-            <rect x="2" y="8" width="32" height="32" rx="6" fill="#c9f24c"/>
-            <path d="M12 24 H24 M18 18 V30" stroke="#121316" stroke-width="4" stroke-linecap="round"/>
-            <text x="44" y="32" fill="#c9f24c" font-size="22" font-weight="bold" font-family="Arial, sans-serif">PiroMed</text>
-            <text x="142" y="32" fill="#ffffff" font-size="22" font-weight="300" font-family="Arial, sans-serif">Office</text>
-          </svg>
+        <div class="brand-preview-box">
+          <div class="logo-sample">
+            <span class="icon-cross">+</span>
+            <span style="color:#c9f24c; margin-right:8px;">PiroMed</span>
+            <span style="color:#ffffff;">Office</span>
+          </div>
         </div>
-        <p><strong>Bedeutung &amp; Gestaltung:</strong> Das grafische Element (stilisiertes medizinisches Organisationskreuz auf limettengrünem Quadrat) kombiniert mit dem Firmennamen in klarer serifenloser Typografie. Es symbolisiert Präzision, Gesundheit und moderne IT-Infrastruktur.</p>
+        <p>
+          <strong>Beschreibung:</strong> Ein stilisiertes grünes Pluszeichen auf dunklem Grund, kombiniert mit dem 
+          Schriftzug „PiroMed Office“. Das Kreuz verweist auf den medizinischen Bereich, der schlichte Schriftzug steht 
+          für klare und moderne Softwareorganisation.
+        </p>
       </div>
 
-      <!-- Markenform 2: Reine Bildmarke -->
-      <div class="brand-box">
-        <h3>2. Reine Bildmarke (Signet / Bildzeichen)</h3>
-        <div class="brand-display">
-          <svg width="70" height="70" viewBox="0 0 70 70" aria-label="Reine Bildmarke PiroMed Symbol">
-            <rect x="5" y="5" width="60" height="60" rx="14" fill="#16181d" stroke="#c9f24c" stroke-width="3"/>
-            <path d="M22 35 H48 M35 22 V48" stroke="#c9f24c" stroke-width="6" stroke-linecap="round"/>
-          </svg>
+      <!-- 2. Reine Bildmarke -->
+      <div class="brand-card">
+        <h3>2. Reine Bildmarke (Signet / Logo ohne Text)</h3>
+        <div class="brand-preview-box">
+          <div class="icon-cross-signet">+</div>
         </div>
-        <p><strong>Bedeutung &amp; Gestaltung:</strong> Die reine Bildmarke besteht ausschließlich aus dem stilisierten Organisations-Icon ohne jegliche Wortbestandteile. Sie dient als eigenständiges Wiedererkennungsmerkmal für Favicons, App-Icons und Benutzeroberflächen.</p>
+        <p>
+          <strong>Beschreibung:</strong> Das Logo ohne jeglichen Text. Es besteht nur aus dem Umriss des medizinischen Symbols. 
+          Diese Form eignet sich besonders gut als Browser-Icon (Favicon), App-Symbol oder für die mobile Ansicht auf dem Smartphone.
+        </p>
       </div>
 
-      <!-- Markenform 3: Farbmarke -->
-      <div class="brand-box">
+      <!-- 3. Farbmarke -->
+      <div class="brand-card">
         <h3>3. Farbmarke (Konturlose Farbmarke)</h3>
-        <div class="brand-display">
+        <div class="brand-preview-box" style="flex-direction: column;">
           <div class="color-swatch"></div>
-          <span class="badge">Hex: #C9F24C</span> · <span class="badge">RGB: 201, 242, 76</span>
+          <div class="color-label">
+            <span>HEX: #C9F24C</span> · <span>RGB: 201, 242, 76</span>
+          </div>
         </div>
-        <p><strong>Bedeutung &amp; Gestaltung:</strong> Geschützt wird der spezifische fluoreszierende Limettengrün-Farbton als Farbmarke für Software-Benutzeroberflächen im medizinisch-administrativen Bereich. Der Farbton hebt sich signifikant vom branchenüblichen Dunkelblau/Weiß ab und gewährleistet höchste Wiedererkennung und Barrierefreiheit (Kontrastverhältnis über 13:1 auf dunklem Grund).</p>
+        <p>
+          <strong>Beschreibung:</strong> Der gezielte Farbton Limettengrün. Er unterscheidet die Software bewusst von den 
+          typischen blauen Arztprogrammen und garantiert auf dem dunklen Hintergrund einen sehr hohen Kontrast (über 13:1), 
+          was auch für die Barrierefreiheit wichtig ist.
+        </p>
       </div>
 
-      <h2>Klassifikation nach dem Abkommen von Nizza</h2>
-      <p>Die Marken von PiroMed Office werden für folgende Klassen des Nizza-Klassifikationssystems beansprucht:</p>
+      <h2>Nizza-Klassen</h2>
+      <p>PiroMed Office fällt unter folgende zwei Klassen der Nizza-Klassifikation:</p>
+
       <table>
         <thead>
           <tr>
-            <th>Nizza-Klasse</th>
-            <th>Waren- und Dienstleistungsverzeichnis</th>
+            <th>Klasse</th>
+            <th>Waren- und Dienstleistungsbereich</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Klasse 9</strong></td>
-            <td>Herunterladbare und aufgezeichnete Software für die Terminverwaltung, Ordinationsorganisation und Büroautomation im Gesundheitswesen; Datenbankmanagement-Software.</td>
+            <td>Klasse 9</td>
+            <td>Software auf Datenträgern oder zum Herunterladen für Terminplanung, Praxisorganisation und Büroabläufe im Gesundheitsbereich.</td>
           </tr>
           <tr>
-            <td><strong>Klasse 42</strong></td>
-            <td>Software as a Service (SaaS); Bereitstellung von nicht herunterladbarer Online-Software zur Praxisadministration; Cloud-Computing zur sicheren Datenorganisation für medizinische Einrichtungen.</td>
+            <td>Klasse 42</td>
+            <td>Bereitstellung von Online-Software (Cloud / SaaS) für das Praxismanagement und die sichere Datenorganisation im medizinischen Umfeld.</td>
           </tr>
         </tbody>
       </table>
 
-      <h2>Markenrecherche &amp; Kollisionsprüfung</h2>
+      <h2>Markenprüfung &amp; Recherche</h2>
       <p>
-        Zur Vermeidung von Schutzrechtsverletzungen Dritter wurde eine systematische Recherche über die amtlichen Register (<strong>EUIPO eSearch</strong>, <strong>TMview</strong> sowie das Register des Österreichischen Patentamtes) durchgeführt. Für die gewählte Zeichenkombination <em>„PiroMed Office“</em> sowie die grafische Ausgestaltung konnten in den Klassen 9 und 42 keine identischen oder verwechslungsfähigen prioritätsälteren Schutzrechte festgestellt werden.
+        Vor der Auswahl des Namens wurde in den Registern des Österreichischen Patentamtes sowie in den Datenbanken 
+        <strong>EUIPO eSearch</strong> und <strong>TMview</strong> nach bestehenden Marken gesucht. Für die Kombination 
+        „PiroMed Office“ in den Klassen 9 und 42 wurden dabei keine älteren, identischen oder leicht verwechselbaren Marken gefunden.
       </p>
 
       <p style="font-size:13px; color:#8b949e; margin-top:35px; text-align: center;">
-        <em>Hinweis: Universitäres Prüfungsprojekt an der TU Wien (Lehrveranstaltung Daten- und Informatikrecht, WS 2026).</em>
+        <em>Hinweis: Universitäres Prüfungsprojekt an der TU Wien (Lehrveranstaltung Daten- und Informatikrecht, Wintersemester 2026).</em>
       </p>
     </main>
 
     <footer>
       <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
       <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
-        Konzeption &amp; technische Realisierung durch PiroMed Office Web Engineering
+        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
       </p>
     </footer>
   </div>
