@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rechtsgrundlagen &amp; Quellen - PiroMed Office</title>
+  <title>Rechtsgrundlagen &amp; Quellennachweise - PiroMed Office</title>
   <style>
     body {
       margin: 0;
@@ -31,6 +31,23 @@
     .brand-title a {
       color: #c9f24c;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-cross {
+      width: 32px;
+      height: 32px;
+      background-color: #c9f24c;
+      color: #121316;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      margin-right: 12px;
+      line-height: 1;
     }
     .brand-claim {
       font-size: 18px;
@@ -59,19 +76,20 @@
     h1 {
       color: #ffffff;
       font-size: 26px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       text-align: center;
     }
     h2 {
       color: #ffffff;
-      font-size: 20px;
+      font-size: 19px;
       border-bottom: 1px solid #24262b;
       padding-bottom: 8px;
       margin-top: 35px;
+      text-align: left;
     }
     p, li {
       color: #d1d5db;
-      font-size: 16px;
+      font-size: 15px;
     }
     ul {
       padding-left: 20px;
@@ -79,29 +97,14 @@
     li {
       margin-bottom: 10px;
     }
-    .source-card {
-      background-color: #16181d;
-      border: 1px solid #24262b;
-      border-left: 4px solid #c9f24c;
-      border-radius: 6px;
-      padding: 16px 20px;
-      margin-bottom: 18px;
-    }
-    .source-card h3 {
+    li strong {
       color: #ffffff;
-      margin-top: 0;
-      font-size: 17px;
-      margin-bottom: 8px;
     }
-    .source-card p {
-      font-size: 14px;
-      margin: 4px 0;
-    }
-    a.link {
+    a.contact-link {
       color: #c9f24c;
       text-decoration: none;
     }
-    a.link:hover {
+    a.contact-link:hover {
       text-decoration: underline;
     }
     footer {
@@ -118,7 +121,11 @@
 
   <div class="container">
     <header>
-      <div class="brand-title"><a href="index.html">PiroMed Office</a></div>
+      <div class="brand-title">
+        <a href="index.html">
+          <span class="icon-cross">+</span>PiroMed Office
+        </a>
+      </div>
       <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
 
       <nav aria-label="Hauptnavigation">
@@ -133,75 +140,44 @@
     </header>
 
     <main>
-      <h1>Rechtsgrundlagen &amp; Urheberrechtsnachweise</h1>
-      <p style="text-align: center; color: #8b949e;">Dokumentation sämtlicher verwendeter Medien, Schriften und Lizenzen gemäß Aufgabe 2 der Lehrveranstaltung.</p>
+      <h1>Rechtsgrundlagen &amp; Quellennachweise</h1>
 
-      <h2>1. Verwendete Medien &amp; Verwertungsrechte (Aufgabe 2)</h2>
       <p>
-        Zur Gewährleistung der Urheberrechtskonformität (§§ 1 ff. UrhG) werden ausschließlich lizenzfreie bzw. zur freien kommerziellen Nutzung freigegebene Medien eingesetzt:
+        Übersicht der herangezogenen österreichischen und europäischen Rechtsnormen sowie Bildnachweise 
+        für das Projekt PiroMed Office:
       </p>
 
-      <div class="source-card">
-        <h3>Hauptbild (Startseite): Praxisorganisation &amp; IT-Nutzung</h3>
-        <p><strong>Dateiname:</strong> Praxispixabay.jpg</p>
-        <p><strong>Quelle:</strong> Pixabay Content License (Freie kommerzielle Nutzung, kein Bildnachweis rechtlich zwingend erforderlich, wird jedoch transparent dokumentiert).</p>
-        <p><strong>Weblink:</strong> <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer" class="link">pixabay.com</a></p>
-        <p><strong>Rechteinhaber:</strong> Lizenzierte Pixabay-Urheber.</p>
-      </div>
-
-      <div class="source-card">
-        <h3>Video-Vorschau (Poster): Arzt mit Stethoskop &amp; Kittel</h3>
-        <p><strong>Dateiname:</strong> arzt-poster.jpg</p>
-        <p><strong>Urheber:</strong> DarkoStojanovic auf Pixabay</p>
-        <p><strong>Quelle / Lizenz:</strong> Pixabay Content License (Kostenlose Nutzung für kommerzielle und nicht-kommerzielle Zwecke).</p>
-        <p><strong>Weblink:</strong> <a href="https://pixabay.com/de/photos/arzt-medizinisch-medizin-563428/" target="_blank" rel="noopener noreferrer" class="link">pixabay.com/de/photos/arzt-medizinisch-medizin-563428/</a></p>
-      </div>
-
-      <div class="source-card">
-        <h3>Demonstrationsvideo: Praxisarbeitsplatz</h3>
-        <p><strong>Medium:</strong> HTML5-Video (Workflow-Demonstration)</p>
-        <p><strong>Quelle:</strong> Mixkit / Open Access Video Stock Library</p>
-        <p><strong>Lizenz:</strong> Mixkit Stock Video Free License (Kommerzielle und redaktionelle Nutzung gestattet; keine Lizenzgebühren).</p>
-      </div>
-
-      <div class="source-card">
-        <h3>Typografie &amp; Grafikelemente</h3>
-        <p><strong>Schriftarten:</strong> Systemintegrierte Standard-Webfonts (Arial, sans-serif) zur Vermeidung von DSGVO-kritischen externen Schriftservern.</p>
-        <p><strong>Marken- &amp; Icon-Grafiken:</strong> Eigene Vektor-Erstellung (Inline SVG) durch <em>PiroMed Office Web Engineering</em>.</p>
-      </div>
-
-      <h2>2. Gesetzliche Grundlagen &amp; Normen (Offizielle Quellen)</h2>
-      <p>Dieses Webprojekt berücksichtigt insbesondere folgende österreichische und europäische Rechtsnormen:</p>
+      <h2>1. Urheberrechtliche Nachweise (Bildquellen)</h2>
       <ul>
         <li>
-          <strong><a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001848" target="_blank" rel="noopener noreferrer" class="link">UrhG (Urheberrechtsgesetz)</a>:</strong> Transparente Verwertungsrechte und lizenzkonforme Nutzung aller Bild- und Videomedien.
+          <strong>Titelbild Startseite (Praxisteam / Ärzteteam):</strong><br>
+          Quelle: Pixabay (<a href="https://pixabay.com" target="_blank" rel="noopener" class="contact-link">pixabay.com</a>). Lizenz: Freie kommerzielle Nutzung im Rahmen der Pixabay Content License. 
+          Aus Transparenzgründen und in Anlehnung an § 74 UrhG (österreichischer Lichtbildschutz) als KI-generiertes Symbolbild gekennzeichnet.
         </li>
         <li>
-          <strong><a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002167" target="_blank" rel="noopener noreferrer" class="link">MarkSchG (Markenschutzgesetz)</a>:</strong> Einhaltung der Schutzfähigkeit von Markenformen sowie Nizza-Klassifikation (Klassen 9 und 42).
-        </li>
-        <li>
-          <strong><a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20001703" target="_blank" rel="noopener noreferrer" class="link">ECG (E-Commerce-Gesetz)</a> &amp; <a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000744" target="_blank" rel="noopener noreferrer" class="link">Mediengesetz</a>:</strong> Umfassende Erfüllung der Informations- und Offenlegungspflichten (§ 5 ECG, § 25 MedienG).
-        </li>
-        <li>
-          <strong><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679" target="_blank" rel="noopener noreferrer" class="link">DSGVO (Datenschutz-Grundverordnung)</a>:</strong> Rechtskonforme Verarbeitung personenbezogener Daten und vollständige Informationstransparenz.
-        </li>
-        <li>
-          <strong><a href="https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20011678" target="_blank" rel="noopener noreferrer" class="link">TKG 2021 (Telekommunikationsgesetz)</a>:</strong> Schutz der Privatsphäre bei elektronischer Kommunikation (§ 165 TKG – Verzicht auf Tracking-Cookies).
-        </li>
-        <li>
-          <strong><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32017R0745" target="_blank" rel="noopener noreferrer" class="link">EU-MDR (Medical Device Regulation 2017/745)</a>:</strong> Konforme Einordnung als reines Praxismanagement-System ohne medizinproduktrechtliche Zertifizierungspflicht.
+          <strong>Historische Bilddokumente (Über uns):</strong><br>
+          Fotos der Sponsionsfeier, Urkundenübergabe und Festrede an der TU Wien (1993) sowie Bestätigung des EDV-Zentrums stammen aus dem privaten Archiv des Gründers Dipl.-Ing. Birol Kılıç. Veröffentlichung mit ausdrücklicher Zustimmung.
         </li>
       </ul>
 
-      <p style="font-size:13px; color:#8b949e; margin-top:35px; text-align: center;">
-        <em>Hinweis: Universitäres Prüfungsprojekt an der TU Wien (Lehrveranstaltung Daten- und Informatikrecht, WS 2026).</em>
+      <h2>2. Einschlägige Rechtsnormen</h2>
+      <ul>
+        <li><strong>§ 5 E-Commerce-Gesetz (ECG):</strong> Allgemeine Informationspflichten für kommerzielle Websites in Österreich.</li>
+        <li><strong>§ 25 Mediengesetz (MedienG):</strong> Offenlegungspflicht und Impressumsangaben für Online-Medien.</li>
+        <li><strong>Datenschutz-Grundverordnung (DSGVO) &amp; TKG 2021:</strong> Vorgaben zur Speicherung von Server-Logfiles, Datenverarbeitung und Informationspflichten.</li>
+        <li><strong>Österreichisches Markenschutzgesetz (MSchG):</strong> Kriterien für die Registrierbarkeit von Wort-Bildmarken, Bildmarken und konturlosen Farbmarken.</li>
+        <li><strong>Web-Zugänglichkeits-Gesetz (WZG) &amp; WCAG 2.1:</strong> Vorgaben für Barrierefreiheit im Web.</li>
+      </ul>
+
+      <p style="font-size:13px; color:#8b949e; margin-top:40px; text-align: center;">
+        <em>Dokumentation zur universitären Lehrveranstaltung „Daten- und Informatikrecht“ an der TU Wien (Wintersemester 2026).</em>
       </p>
     </main>
 
     <footer>
       <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
       <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
-        Konzeption &amp; technische Realisierung durch PiroMed Office Web Engineering
+        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
       </p>
     </footer>
   </div>
