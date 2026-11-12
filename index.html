@@ -373,14 +373,21 @@
     </footer>
   </div>
 
-  <script>
-    function mockOrder(packageName) {
-      const statusDiv = document.getElementById('order-status');
-      statusDiv.style.display = 'block';
-      statusDiv.innerHTML = '<strong>Abonnement-Auswahl registriert:</strong> Das Paket „' + packageName + '“ wurde vorgemerkt. (Gemockter B2B-Kaufprozess gemäß Aufgabenstellung 0 & 5).';
-      statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+<script>
+  function mockOrder(packageName) {
+    const statusDiv = document.getElementById('order-status');
+    statusDiv.style.display = 'block';
+    statusDiv.innerHTML = '<strong>Abonnement-Auswahl registriert:</strong> Das Paket „' + packageName + '“ wurde vorgemerkt. (Gemockter B2B-Kaufprozess gemäß Aufgabenstellung)';
+    statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // Header'a yesil arti logosunu otomatik ekler
+  document.querySelectorAll('.brand-title').forEach(el => {
+    if (!el.querySelector('.header-plus-icon')) {
+      el.insertAdjacentHTML('afterbegin', '<span class="header-plus-icon" style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; background-color:#c9f24c; color:#121316; border-radius:6px; font-weight:900; font-size:24px; margin-right:12px; vertical-align:middle; line-height:1;">+</span>');
     }
-  </script>
+  });
+</script>
 
 </body>
 </html>
