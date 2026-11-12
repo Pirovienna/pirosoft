@@ -31,6 +31,23 @@
     .brand-title a {
       color: #c9f24c;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-cross {
+      width: 32px;
+      height: 32px;
+      background-color: #c9f24c;
+      color: #121316;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      margin-right: 12px;
+      line-height: 1;
     }
     .brand-claim {
       font-size: 18px;
@@ -59,53 +76,27 @@
     h1 {
       color: #ffffff;
       font-size: 26px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       text-align: center;
     }
     h2 {
       color: #ffffff;
-      font-size: 20px;
+      font-size: 19px;
       border-bottom: 1px solid #24262b;
       padding-bottom: 8px;
       margin-top: 35px;
+      text-align: left;
     }
     p, li {
       color: #d1d5db;
-      font-size: 16px;
-    }
-    .legal-card {
-      background-color: #16181d;
-      border: 1px solid #24262b;
-      border-left: 4px solid #c9f24c;
-      border-radius: 6px;
-      padding: 22px;
-      margin: 20px 0;
-    }
-    .legal-card p {
-      margin: 8px 0;
-    }
-    .legal-card strong {
-      color: #ffffff;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    th, td {
-      border: 1px solid #24262b;
-      padding: 12px;
-      text-align: left;
       font-size: 15px;
     }
-    th {
-      background-color: #16181d;
+    a.contact-link {
       color: #c9f24c;
-      width: 35%;
+      text-decoration: none;
     }
-    td {
-      background-color: #121316;
-      color: #d1d5db;
+    a.contact-link:hover {
+      text-decoration: underline;
     }
     footer {
       margin-top: 60px;
@@ -121,7 +112,11 @@
 
   <div class="container">
     <header>
-      <div class="brand-title"><a href="index.html">PiroMed Office</a></div>
+      <div class="brand-title">
+        <a href="index.html">
+          <span class="icon-cross">+</span>PiroMed Office
+        </a>
+      </div>
       <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
 
       <nav aria-label="Hauptnavigation">
@@ -137,80 +132,48 @@
 
     <main>
       <h1>Impressum &amp; Offenlegung</h1>
-      <p style="text-align: center; color: #8b949e;">
-        Informationspflichten gemäß § 5 E-Commerce-Gesetz (ECG), § 14 Unternehmensgesetzbuch (UGB) sowie Offenlegung gemäß § 25 Mediengesetz (MedienG).
+
+      <h2>Angaben gemäß § 5 ECG und § 25 Mediengesetz</h2>
+      <p>
+        <strong>Medieninhaber &amp; Betreiber:</strong><br>
+        PiroMed Office GesmbH<br>
+        Webgasse 12/9<br>
+        1060 Wien, Österreich
       </p>
 
-      <h2>Angaben zum Medieninhaber und Dienstanbieter</h2>
-      <div class="legal-card">
-        <p><strong>Unternehmensbezeichnung:</strong> PiroMed Office GesmbH</p>
-        <p><strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (GesmbH)</p>
-        <p><strong>Geschäftsführer:</strong> Dipl.-Ing. Birol Kılıç</p>
-        <p><strong>Sitz der Gesellschaft:</strong> Webgasse 12/9, 1060 Wien, Österreich</p>
-        <p><strong>Kontakt E-Mail:</strong> office@piromed-office.at</p>
-        <p><strong>Telefon:</strong> +43 1 58801-0</p>
-      </div>
-
-      <h2>Registerdaten &amp; Behörden (§ 14 UGB, § 5 ECG)</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th>Firmenbuchnummer (FN)</th>
-            <td>FN 55 89 83 z</td>
-          </tr>
-          <tr>
-            <th>Firmenbuchgericht</th>
-            <td>Handelsgericht Wien</td>
-          </tr>
-          <tr>
-            <th>Umsatzsteuer-Identifikationsnummer (UID)</th>
-            <td>ATU77089209</td>
-          </tr>
-          <tr>
-            <th>Zuständige Aufsichtsbehörde</th>
-            <td>Magistrat der Stadt Wien (Magistratisches Bezirksamt für den 6./7. Bezirk)</td>
-          </tr>
-          <tr>
-            <th>Kammerzugehörigkeit</th>
-            <td>Mitglied der Wirtschaftskammer Österreich (WKÖ) und Wirtschaftskammer Wien (WK-Wien)</td>
-          </tr>
-          <tr>
-            <th>Fachgruppe</th>
-            <td>Unternehmensberatung, Buchhaltung und Informationstechnologie (UBIT Wien)</td>
-          </tr>
-          <tr>
-            <th>Anwendbare Rechtsvorschriften</th>
-            <td>Gewerbeordnung (GewO), E-Commerce-Gesetz (ECG), Unternehmensgesetzbuch (UGB) – abrufbar über das Rechtsinformationssystem des Bundes (<a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener noreferrer" style="color: #c9f24c;">RIS</a>)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h2>Offenlegung gemäß § 25 Mediengesetz (MedienG)</h2>
+      <h2>Vertretung &amp; Kontakt</h2>
       <p>
-        <strong>Medieninhaber:</strong> PiroMed Office GesmbH, 1060 Wien.<br>
-        <strong>Unternehmensgegenstand:</strong> Entwicklung, Betrieb und Vertrieb von standardisierten Software-as-a-Service-Lösungen (SaaS) für die Praxisorganisation, Terminverwaltung und administrative Befunddokumentation im Gesundheitswesen.
+        <strong>Geschäftsführung:</strong> Dipl.-Ing. Birol Kılıç<br>
+        <strong>E-Mail:</strong> <a href="mailto:office@piromedoffice.at" class="contact-link">office@piromedoffice.at</a><br>
+        <strong>Web:</strong> <a href="https://pirovienna.github.io/piromedft/" class="contact-link">pirovienna.github.io/piromedft</a>
       </p>
+
+      <h2>Unternehmensgegenstand &amp; Ausrichtung</h2>
       <p>
-        <strong>Grundlegende Richtung (Blattlinie):</strong> Präsentation und Bereitstellung digitaler Werkzeuge zur organisatorischen Prozessoptimierung in Arztpraxen, Ordinationen und medizinischen Versorgungszentren sowie universitäre Fachdokumentation im Rahmen der Lehrveranstaltung Daten- und Informatikrecht.
+        <strong>Unternehmensgegenstand:</strong> Entwicklung, Vertrieb und Bereitstellung von Softwarelösungen zur administrativen Praxisorganisation und Dokumentation für Ordinationen und medizinische Einrichtungen.<br>
+        <strong>Grundlegende Richtung (Blattlinie):</strong> Information über das Leistungsspektrum, Lizenzmodelle und rechtliche Rahmenbedingungen der Praxissoftware PiroMed Office.
+      </p>
+
+      <h2>Zuständigkeiten</h2>
+      <p>
+        <strong>Gewerbebehörde:</strong> Magistrat der Stadt Wien (Magistratisches Bezirksamt für den 6./7. Bezirk)<br>
+        <strong>Anwendbare Rechtsvorschriften:</strong> Gewerbeordnung (GewO), E-Commerce-Gesetz (ECG), Mediengesetz (MedienG), abrufbar unter <a href="https://www.ris.bka.gv.at" target="_blank" rel="noopener" class="contact-link">ris.bka.gv.at</a>.
       </p>
 
       <h2>Haftung für Inhalte und Links</h2>
       <p>
-        Die Inhalte dieser Webpräsenz wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Informationen kann jedoch keine Gewähr übernommen werden. Als Diensteanbieter sind wir gemäß § 13 bis § 17 ECG nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen permanent zu überwachen.
-      </p>
-      <p>
-        Verlinkungen auf externe Webseiten Dritter unterliegen nicht unserem Einflussbereich. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Bei Bekanntwerden von konkreten Rechtsverletzungen werden derartige Links umgehend entfernt.
+        Die Inhalte dieser Seiten wurden sorgfältig und nach bestem Wissen erstellt. Als Dienstanbieter sind wir für eigene Inhalte nach den allgemeinen Gesetzen verantwortlich. Für externe Inhalte verlinkter Webseiten Dritter übernehmen wir keine Gewähr, da auf deren Gestaltung und Inhalt kein Einfluss besteht.
       </p>
 
-      <p style="font-size: 13px; color: #8b949e; margin-top: 35px; text-align: center;">
-        <em>Universitäres Prüfungsprojekt an der Technischen Universität Wien (Lehrveranstaltung Daten- und Informatikrecht, WS 2026).</em>
+      <p style="font-size:13px; color:#8b949e; margin-top:40px; text-align: center;">
+        <em>Hinweis: Universitäres Studienprojekt an der TU Wien im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ (Wintersemester 2026).</em>
       </p>
     </main>
 
     <footer>
       <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
       <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
-        Konzeption &amp; technische Realisierung durch PiroMed Office Web Engineering
+        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
       </p>
     </footer>
   </div>
