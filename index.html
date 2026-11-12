@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PiroMed Office - Strukturierte Praxisorganisation & Webshop</title>
+  <title>PiroMed Office – Praxisorganisation &amp; Berichte</title>
   <style>
     body {
       margin: 0;
@@ -31,6 +31,23 @@
     .brand-title a {
       color: #c9f24c;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-cross {
+      width: 34px;
+      height: 34px;
+      background-color: #c9f24c;
+      color: #121316;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      margin-right: 12px;
+      line-height: 1;
     }
     .brand-claim {
       font-size: 18px;
@@ -56,183 +73,181 @@
       color: #c9f24c;
       text-decoration: underline;
     }
-    .hero-img {
+    .hero-image-box {
+      margin-bottom: 35px;
+    }
+    .hero-image-box img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
+      border: 1px solid #24262b;
       display: block;
     }
-    .image-caption {
-      font-size: 12px;
-      color: #8b949e;
+    .image-credit {
       text-align: right;
-      margin-top: 8px;
-      margin-bottom: 35px;
-      font-family: Arial, sans-serif;
-    }
-    .image-caption a {
-      color: #c9f24c;
-      text-decoration: none;
-    }
-    .image-caption a:hover {
-      text-decoration: underline;
+      font-size: 11px;
+      color: #8b949e;
+      margin-top: 6px;
     }
     h1 {
       color: #ffffff;
       font-size: 26px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       text-align: center;
     }
-    h2 {
-      color: #ffffff;
-      font-size: 22px;
-      border-bottom: 1px solid #24262b;
-      padding-bottom: 8px;
-      margin-top: 45px;
+    .intro-text {
       text-align: center;
+      color: #9da7b3;
+      font-size: 15px;
+      max-width: 680px;
+      margin: 0 auto 35px auto;
     }
-    p, li {
-      color: #d1d5db;
-      font-size: 16px;
-    }
-    .grid {
+    .features-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 25px;
+      gap: 18px;
+      margin-bottom: 45px;
     }
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; }
-      .pricing-grid { grid-template-columns: 1fr !important; }
-    }
-    .card {
+    .feature-card {
       background-color: #16181d;
       border: 1px solid #24262b;
       border-top: 3px solid #c9f24c;
-      padding: 20px;
-      border-radius: 6px;
-    }
-    .card h3 {
-      color: #c9f24c;
-      margin-top: 0;
-      font-size: 18px;
-    }
-
-    /* Video-Bereich (Aufgabe 2) */
-    .video-section {
-      margin: 40px 0;
-      background-color: #16181d;
-      border: 1px solid #24262b;
       border-radius: 8px;
       padding: 20px;
+    }
+    .feature-card h2 {
+      color: #c9f24c;
+      font-size: 17px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      color: #d1d5db;
+      font-size: 14px;
+      margin: 0;
+    }
+    .section-title {
+      color: #ffffff;
+      font-size: 22px;
       text-align: center;
+      margin-top: 45px;
+      margin-bottom: 20px;
     }
-    .video-section video {
+    .video-box {
+      background-color: #16181d;
+      border: 1px solid #24262b;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 45px;
+    }
+    .video-box video {
       width: 100%;
-      max-height: 420px;
       border-radius: 6px;
-      background-color: #000000;
       display: block;
-      object-fit: cover;
+      background-color: #000000;
     }
-    .video-desc {
-      font-size: 13px;
+    .video-caption {
+      text-align: center;
+      font-size: 12px;
       color: #8b949e;
       margin-top: 12px;
-      line-height: 1.4;
+      line-height: 1.5;
     }
-    .video-desc a {
+    .video-caption a {
       color: #c9f24c;
       text-decoration: none;
     }
-    .video-desc a:hover {
+    .video-caption a:hover {
       text-decoration: underline;
     }
-
-    /* Webshop Pricing Grid (Aufgabe 0) */
+    .pricing-subtitle {
+      text-align: center;
+      color: #9da7b3;
+      font-size: 14px;
+      margin-top: -10px;
+      margin-bottom: 25px;
+    }
     .pricing-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-      margin-top: 25px;
+      gap: 18px;
+      margin-bottom: 25px;
     }
-    .pricing-card {
+    .price-card {
       background-color: #16181d;
       border: 1px solid #24262b;
-      border-radius: 8px;
-      padding: 20px;
-      text-align: center;
+      border-radius: 10px;
+      padding: 24px 20px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      text-align: center;
     }
-    .pricing-card.featured {
-      border: 2px solid #c9f24c;
+    .price-card.featured {
+      border: 1.5px solid #c9f24c;
     }
-    .pricing-title {
-      font-size: 18px;
-      font-weight: bold;
+    .price-card h3 {
       color: #ffffff;
-      margin-bottom: 8px;
-    }
-    .pricing-price {
-      font-size: 26px;
-      font-weight: 800;
-      color: #c9f24c;
+      font-size: 18px;
+      margin-top: 0;
       margin-bottom: 12px;
     }
-    .pricing-price span {
-      font-size: 13px;
-      color: #8b949e;
-      font-weight: normal;
+    .price-amount {
+      font-size: 32px;
+      font-weight: 800;
+      color: #c9f24c;
+      margin-bottom: 20px;
     }
-    .pricing-card ul {
+    .price-amount span {
+      font-size: 13px;
+      font-weight: normal;
+      color: #8b949e;
+    }
+    .price-features {
       list-style: none;
       padding: 0;
-      margin: 0 0 20px 0;
+      margin: 0 0 25px 0;
       text-align: left;
-      font-size: 14px;
+      flex-grow: 1;
+    }
+    .price-features li {
+      font-size: 13.5px;
       color: #d1d5db;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
     }
-    .pricing-card li {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .pricing-card li::before {
-      content: "✓ ";
+    .price-features li::before {
+      content: "✓";
       color: #c9f24c;
       font-weight: bold;
+      position: absolute;
+      left: 0;
     }
     .btn-order {
       background-color: #c9f24c;
       color: #121316;
       border: none;
-      padding: 10px 16px;
-      font-size: 14px;
-      font-weight: bold;
       border-radius: 6px;
+      padding: 11px 16px;
+      font-size: 14px;
+      font-weight: 700;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.2s;
+      width: 100%;
     }
     .btn-order:hover {
-      background-color: #b5dc3f;
+      background-color: #b8e03d;
     }
-
-    /* Modal / Alert für gemockte Bestellung */
     #order-status {
       display: none;
-      margin-top: 20px;
-      padding: 14px;
-      background-color: #1a2718;
+      background-color: #16181d;
       border: 1px solid #c9f24c;
+      color: #ffffff;
+      padding: 14px 18px;
       border-radius: 6px;
-      color: #c9f24c;
+      margin-top: 20px;
       font-size: 14px;
       text-align: center;
     }
-
     footer {
       margin-top: 60px;
       border-top: 1px solid #24262b;
@@ -241,14 +256,23 @@
       color: #8b949e;
       text-align: center;
     }
+    @media (max-width: 720px) {
+      .features-grid, .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <header>
-      <div class="brand-title"><a href="index.html">PiroMed Office</a></div>
-      <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
+      <div class="brand-title">
+        <a href="index.html">
+          <span class="icon-cross">+</span>PiroMed Office
+        </a>
+      </div>
+      <div class="brand-claim">Praxisorganisation und Berichtswesen für Ordinationen</div>
 
       <nav aria-label="Hauptnavigation">
         <a href="index.html">Start</a> |
@@ -262,105 +286,105 @@
     </header>
 
     <main>
-      <!-- Hero-Görsel ve Yasal Telif Bildirimi (§ 74 UrhG) -->
-      <figure style="margin: 0;">
-        <img src="Praxispixabay.jpg" alt="Moderne Praxisorganisation mit digitaler Verwaltung" class="hero-img">
-        <figcaption class="image-caption">
-          Bildnachweis: © Pixabay / KI-generiert (Pixabay Content License)
-        </figcaption>
-      </figure>
+      <div class="hero-image-box">
+        <img src="hero.jpg" alt="Ärzteteam bei der digitalen Arbeitsorganisation in der Ordination">
+        <div class="image-credit">Bildnachweis: © Pixabay / KI-generiert (Pixabay Content License)</div>
+      </div>
 
-      <h1>Effiziente Administration für Arztpraxen und Ordinationen</h1>
-      <p style="text-align: center; color: #8b949e; max-width: 700px; margin: 0 auto 30px auto;">
-        Entlasten Sie Ihr Praxisteam durch automatisierte Abläufe, strukturierte Terminplanung und datenschutzkonforme Berichtsgenerierung – ganz ohne bürokratischen Mehraufwand.
+      <h1>Verwaltungssoftware für Arztpraxen und Ordinationen</h1>
+      <p class="intro-text">
+        PiroMed Office unterstützt Ordinationen bei der täglichen Terminplanung, der Patientenverwaltung 
+        und der Erstellung strukturierter Verwaltungsberichte.
       </p>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Terminmanagement</h3>
-          <p>Übersichtliche Kalenderführung mit Erinnerungsfunktionen, optimiert für den reibungslosen Praxisbetrieb und minimale Wartezeiten.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h2>Terminplanung</h2>
+          <p>
+            Kalenderverwaltung für Einzel- und Gruppenpraxen mit Erinnerungsfunktion und einfacher Übersicht über freie Zeitfenster.
+          </p>
         </div>
-        <div class="card">
-          <h3>Automatisierte Berichte</h3>
-          <p>Schnelle Erstellung von administrativen Auswertungen, Leistungsnachweisen und Organisationsberichten auf Knopfdruck.</p>
+
+        <div class="feature-card">
+          <h2>Berichtswesen</h2>
+          <p>
+            Erstellung von Leistungsnachweisen, Abrechnungsübersichten und internen Praxisberichten als PDF- oder CSV-Datei.
+          </p>
         </div>
-        <div class="card">
-          <h3>B2B & DSGVO-Konformität</h3>
-          <p>Maßgeschneidert für Ordinationen und medizinische Versorgungszentren – strikte Trennung von Verwaltungsdaten und höchste Datensicherheit.</p>
+
+        <div class="feature-card">
+          <h2>B2B &amp; Datenschutz</h2>
+          <p>
+            Konzipiert für den Einsatz in österreichischen Ordinationen mit strikter Mandantentrennung gemäß DSGVO.
+          </p>
         </div>
-        <div class="card">
-          <h3>Kein Medizinprodukt (MDR-frei)</h3>
-          <p>Fokus rein auf organisatorische Praxisabläufe. Keine diagnostischen Berechnungen, daher rechtssicher ohne regulatorische Hürden einsetzbar.</p>
+
+        <div class="feature-card">
+          <h2>Kein Medizinprodukt (MDR)</h2>
+          <p>
+            Die Software dient ausschließlich der Büroorganisation. Es erfolgen keine medizinischen Diagnosen oder Dosierungsberechnungen.
+          </p>
         </div>
       </div>
 
-      <!-- Video-Integration (Aufgabe 2) -->
-      <h2>Produkteinblick &amp; Workflow-Demonstration</h2>
-      <div class="video-section">
-        <video controls preload="metadata" poster="arzt-poster.jpg" onended="this.load();" aria-label="Anschauungsvideo: PiroMed Office in der Praxis">
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-doctor-working-on-a-computer-42034-large.mp4" type="video/mp4">
-          <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-          Ihr Browser unterstützt das Video-Element nicht.
+      <h2 class="section-title">Einblick in den Arbeitsablauf</h2>
+      <div class="video-box">
+        <video controls poster="poster.jpg">
+          <source src="demo.mp4" type="video/mp4">
+          Ihr Browser unterstützt die Videowiedergabe nicht.
         </video>
-        <div class="video-desc">
+        <div class="video-caption">
           <strong>Video-Vorschau:</strong> Praxisorganisation &amp; Arbeitsplatz (Poster: Pixabay / DarkoStojanovic; Video: Open Access) – Eingebunden als Anschauungsmedium gemäß Aufgabe 2.<br>
-          <em>Detaillierte Urheberrechts- und Lizenznachweise finden Sie auf unserer <a href="quellen.html">Rechtsgrundlagen &amp; Quellen-Seite</a>.</em>
+          Detaillierte Urheberrechts- und Lizenznachweise finden Sie auf unserer <a href="quellen.html">Rechtsgrundlagen &amp; Quellen-Seite</a>.
         </div>
       </div>
 
-      <!-- Webshop-Schnittstelle: B2B-Lizenzpakete (Aufgabe 0 & 5) -->
-      <h2>Software-Abonnements &amp; Lizenzen (B2B Webshop)</h2>
-      <p style="text-align: center; color: #8b949e; font-size: 15px; margin-bottom: 20px;">
-        Wählen Sie das passende Organisationspaket für Ihre Ordination. Abrechnung monatlich kündbar oder mit Jahresrabatt.
+      <h2 class="section-title">Software-Abonnements (B2B)</h2>
+      <p class="pricing-subtitle">
+        Alle Preise gelten für gewerbliche Kunden (Ordinationen und Therapiezentren) zuzüglich USt.
       </p>
 
       <div class="pricing-grid">
-        <div class="pricing-card">
-          <div>
-            <div class="pricing-title">Starter Ordination</div>
-            <div class="pricing-price">€ 49,- <span>/ Monat</span></div>
-            <ul>
-              <li>1 Arbeitsplatz</li>
-              <li>Termin- &amp; Kalendermodul</li>
-              <li>DSGVO-Exportfunktion</li>
-              <li>E-Mail-Support</li>
-            </ul>
-          </div>
-          <button class="btn-order" onclick="mockOrder('Starter Ordination')">Jetzt abonnieren</button>
+        <div class="price-card">
+          <h3>Starter Ordination</h3>
+          <div class="price-amount">€ 49,- <span>/ Monat</span></div>
+          <ul class="price-features">
+            <li>1 Arbeitsplatz</li>
+            <li>Termin- &amp; Kalendermodul</li>
+            <li>DSGVO-Exportfunktion</li>
+            <li>E-Mail-Support</li>
+          </ul>
+          <button type="button" class="btn-order" onclick="mockOrder('Starter Ordination')">Jetzt abonnieren</button>
         </div>
 
-        <div class="pricing-card featured">
-          <div>
-            <div class="pricing-title">Professional Praxis</div>
-            <div class="pricing-price">€ 89,- <span>/ Monat</span></div>
-            <ul>
-              <li>Bis zu 5 Arbeitsplätze</li>
-              <li>Automatisierte Berichte</li>
-              <li>Rollen- &amp; Rechteverwaltung</li>
-              <li>Priorisierter Support</li>
-            </ul>
-          </div>
-          <button class="btn-order" onclick="mockOrder('Professional Praxis')">Jetzt abonnieren</button>
+        <div class="price-card featured">
+          <h3>Professional Praxis</h3>
+          <div class="price-amount">€ 89,- <span>/ Monat</span></div>
+          <ul class="price-features">
+            <li>Bis zu 5 Arbeitsplätze</li>
+            <li>Automatisierte Berichte</li>
+            <li>Rollen- &amp; Rechteverwaltung</li>
+            <li>Priorisierter Support</li>
+          </ul>
+          <button type="button" class="btn-order" onclick="mockOrder('Professional Praxis')">Jetzt abonnieren</button>
         </div>
 
-        <div class="pricing-card">
-          <div>
-            <div class="pricing-title">Gruppenpraxis Plus</div>
-            <div class="pricing-price">€ 149,- <span>/ Monat</span></div>
-            <ul>
-              <li>Unbegrenzte Arbeitsplätze</li>
-              <li>Mandantenfähige Verwaltung</li>
-              <li>Schnittstellenanbindung (API)</li>
-              <li>Persönlicher Onboarding-Service</li>
-            </ul>
-          </div>
-          <button class="btn-order" onclick="mockOrder('Gruppenpraxis Plus')">Jetzt abonnieren</button>
+        <div class="price-card">
+          <h3>Gruppenpraxis Plus</h3>
+          <div class="price-amount">€ 149,- <span>/ Monat</span></div>
+          <ul class="price-features">
+            <li>Unbegrenzte Arbeitsplätze</li>
+            <li>Mandantenfähige Verwaltung</li>
+            <li>Schnittstellenanbindung (API)</li>
+            <li>Persönlicher Onboarding-Service</li>
+          </ul>
+          <button type="button" class="btn-order" onclick="mockOrder('Gruppenpraxis Plus')">Jetzt abonnieren</button>
         </div>
       </div>
 
-      <div id="order-status" role="alert"></div>
+      <div id="order-status"></div>
 
-      <p style="font-size:13px; color:#8b949e; margin-top:40px; text-align: center;">
+      <p style="font-size:13px; color:#8b949e; margin-top:35px; text-align: center;">
         <em>Hinweis: PiroMed Office ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026). Sämtliche Bestellprozesse sind gemockt.</em>
       </p>
     </main>
@@ -368,26 +392,19 @@
     <footer>
       <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
       <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
-        Konzeption &amp; technische Realisierung durch PiroMed Office Web Engineering
+        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
       </p>
     </footer>
   </div>
 
-<script>
-  function mockOrder(packageName) {
-    const statusDiv = document.getElementById('order-status');
-    statusDiv.style.display = 'block';
-    statusDiv.innerHTML = '<strong>Abonnement-Auswahl registriert:</strong> Das Paket „' + packageName + '“ wurde vorgemerkt. (Gemockter B2B-Kaufprozess gemäß Aufgabenstellung)';
-    statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-
-  // Header'a yesil arti logosunu otomatik ekler
-  document.querySelectorAll('.brand-title').forEach(el => {
-    if (!el.querySelector('.header-plus-icon')) {
-      el.insertAdjacentHTML('afterbegin', '<span class="header-plus-icon" style="display:inline-flex; align-items:center; justify-content:center; width:34px; height:34px; background-color:#c9f24c; color:#121316; border-radius:6px; font-weight:900; font-size:24px; margin-right:12px; vertical-align:middle; line-height:1;">+</span>');
+  <script>
+    function mockOrder(packageName) {
+      const statusDiv = document.getElementById('order-status');
+      statusDiv.style.display = 'block';
+      statusDiv.innerHTML = '<strong>Auswahl vorgemerkt:</strong> Das Paket „' + packageName + '“ wurde registriert (simulierter B2B-Bestellvorgang ohne Zahlungsverpflichtung).';
+      statusDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-  });
-</script>
+  </script>
 
 </body>
 </html>
