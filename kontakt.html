@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt &amp; Support - PiroMed Office</title>
+  <title>PiroMed Office – Praxisorganisation &amp; Berichte</title>
   <style>
     body {
       margin: 0;
@@ -36,8 +36,8 @@
       justify-content: center;
     }
     .icon-cross {
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       background-color: #c9f24c;
       color: #121316;
       border-radius: 6px;
@@ -73,191 +73,73 @@
       color: #c9f24c;
       text-decoration: underline;
     }
+    .hero-image-box {
+      margin-bottom: 35px;
+    }
+    .hero-image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #24262b;
+      display: block;
+    }
+    .image-credit {
+      text-align: right;
+      font-size: 11px;
+      color: #8b949e;
+      margin-top: 6px;
+    }
     h1 {
       color: #ffffff;
       font-size: 26px;
-      margin-bottom: 25px;
+      margin-bottom: 12px;
       text-align: center;
     }
-    h2 {
-      color: #ffffff;
-      font-size: 19px;
-      border-bottom: 1px solid #24262b;
-      padding-bottom: 8px;
-      margin-top: 35px;
-      text-align: left;
-    }
-    p, li {
-      color: #d1d5db;
+    .intro-text {
+      text-align: center;
+      color: #9da7b3;
       font-size: 15px;
+      max-width: 680px;
+      margin: 0 auto 35px auto;
     }
-    a.contact-link {
-      color: #c9f24c;
-      text-decoration: none;
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 45px;
     }
-    a.contact-link:hover {
-      text-decoration: underline;
-    }
-    .contact-card {
+    .feature-card {
       background-color: #16181d;
       border: 1px solid #24262b;
-      border-left: 4px solid #c9f24c;
+      border-top: 3px solid #c9f24c;
+      border-radius: 8px;
       padding: 20px;
-      border-radius: 6px;
-      margin-bottom: 25px;
     }
-    .contact-card h3 {
+    .feature-card h2 {
+      color: #c9f24c;
+      font-size: 17px;
       margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      color: #d1d5db;
+      font-size: 14px;
+      margin: 0;
+    }
+    .section-title {
       color: #ffffff;
-      font-size: 18px;
-      margin-bottom: 8px;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    label {
-      display: block;
-      font-size: 14px;
-      color: #c9d1d9;
-      margin-bottom: 5px;
-    }
-    input[type="text"], input[type="email"], textarea {
-      width: 100%;
-      box-sizing: border-box;
-      background-color: #0d0e11;
-      border: 1px solid #30363d;
-      color: #ffffff;
-      padding: 10px 12px;
-      border-radius: 6px;
-      font-family: inherit;
-      font-size: 14px;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #c9f24c;
-    }
-    .btn-send {
-      background-color: #c9f24c;
-      color: #121316;
-      border: none;
-      border-radius: 6px;
-      padding: 12px 20px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .btn-send:hover {
-      background-color: #b8e03d;
-    }
-    #form-status {
-      display: none;
-      background-color: #16181d;
-      border: 1px solid #c9f24c;
-      color: #ffffff;
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin-top: 15px;
-      font-size: 14px;
-    }
-    footer {
-      margin-top: 60px;
-      border-top: 1px solid #24262b;
-      padding-top: 25px;
-      font-size: 14px;
-      color: #8b949e;
+      font-size: 22px;
       text-align: center;
+      margin-top: 45px;
+      margin-bottom: 20px;
     }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <header>
-      <div class="brand-title">
-        <a href="index.html">
-          <span class="icon-cross">+</span>PiroMed Office
-        </a>
-      </div>
-      <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
-
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html">Start</a> |
-        <a href="ueber-uns.html">Über uns</a> |
-        <a href="kontakt.html">Kontakt</a> |
-        <a href="barrierefreiheit.html">Barrierefreiheit</a> |
-        <a href="impressum.html">Impressum</a> |
-        <a href="datenschutz.html">Datenschutz</a> |
-        <a href="lizenz.html">Lizenzbestimmungen</a> |
-        <a href="quellen.html">Rechtsgrundlagen</a>
-      </nav>
-    </header>
-
-    <main>
-      <h1>Kontakt &amp; Kundenservice</h1>
-      <p>
-        Sie haben organisatorische oder technische Fragen zu PiroMed Office? Unser Support-Team steht Arztpraxen 
-        und Ordinationen gerne zur Verfügung.
-      </p>
-
-      <div class="contact-card">
-        <h3>PiroMed Office GesmbH</h3>
-        <p style="margin: 0 0 10px 0;">
-          Webgasse 12/9, 1060 Wien, Österreich
-        </p>
-        <p style="margin: 0 0 6px 0;">
-          <strong>Telefon:</strong> 01-513 89 45-0
-        </p>
-        <p style="margin: 0 0 6px 0;">
-          <strong>E-Mail:</strong> <a href="mailto:office@piromedoffice.at" class="contact-link">office@piromedoffice.at</a>
-        </p>
-        <p style="margin: 0;">
-          <strong>Ansprechpartnerin für Ordinationen:</strong> Monika Karenz (Kundenbetreuung &amp; Support)
-        </p>
-      </div>
-
-      <h2>Nachricht senden</h2>
-      <form onsubmit="handleContact(event)">
-        <div class="form-group">
-          <label for="name">Ihr Name / Ordination</label>
-          <input type="text" id="name" required placeholder="z. B. Dr. med. Musterpraxis">
-        </div>
-
-        <div class="form-group">
-          <label for="email">E-Mail-Adresse</label>
-          <input type="email" id="email" required placeholder="ordination@beispiel.at">
-        </div>
-
-        <div class="form-group">
-          <label for="message">Ihre Anfrage</label>
-          <textarea id="message" rows="4" required placeholder="Ihre Nachricht an Frau Karenz und das PiroMed-Team..."></textarea>
-        </div>
-
-        <button type="submit" class="btn-send">Anfrage übermitteln</button>
-      </form>
-
-      <div id="form-status"></div>
-
-      <p style="font-size:13px; color:#8b949e; margin-top:40px; text-align: center;">
-        <em>Hinweis: Universitäres Studienprojekt an der TU Wien (Lehrveranstaltung Daten- und Informatikrecht, Wintersemester 2026). Alle Formularfunktionen sind gemockt.</em>
-      </p>
-    </main>
-
-    <footer>
-      <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
-      <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
-        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
-      </p>
-    </footer>
-  </div>
-
-  <script>
-    function handleContact(e) {
-      e.preventDefault();
-      const status = document.getElementById('form-status');
-      status.style.display = 'block';
-      status.innerHTML = '<strong>Vielen Dank!</strong> Ihre Nachricht wurde registriert und an <strong>Monika Karenz</strong> weitergeleitet (simulierter Test-Prozess gemäß Aufgabenstellung).';
+    .video-box {
+      background-color: #16181d;
+      border: 1px solid #24262b;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 45px;
     }
-  </script>
-
-</body>
-</html>
+    .video-box video {
+      width: 100%;
+      border-
