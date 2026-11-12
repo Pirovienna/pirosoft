@@ -31,6 +31,23 @@
     .brand-title a {
       color: #c9f24c;
       text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-cross {
+      width: 32px;
+      height: 32px;
+      background-color: #c9f24c;
+      color: #121316;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+      margin-right: 12px;
+      line-height: 1;
     }
     .brand-claim {
       font-size: 18px;
@@ -59,25 +76,26 @@
     h1 {
       color: #ffffff;
       font-size: 26px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       text-align: center;
     }
     h2 {
       color: #ffffff;
-      font-size: 20px;
+      font-size: 19px;
       border-bottom: 1px solid #24262b;
       padding-bottom: 8px;
       margin-top: 35px;
+      text-align: left;
     }
     p, li {
       color: #d1d5db;
-      font-size: 16px;
+      font-size: 15px;
     }
-    a.link {
+    a.contact-link {
       color: #c9f24c;
       text-decoration: none;
     }
-    a.link:hover {
+    a.contact-link:hover {
       text-decoration: underline;
     }
     footer {
@@ -94,7 +112,11 @@
 
   <div class="container">
     <header>
-      <div class="brand-title"><a href="index.html">PiroMed Office</a></div>
+      <div class="brand-title">
+        <a href="index.html">
+          <span class="icon-cross">+</span>PiroMed Office
+        </a>
+      </div>
       <div class="brand-claim">Strukturierte Praxisorganisation – Automatisierte Berichte für moderne Ordinationen</div>
 
       <nav aria-label="Hauptnavigation">
@@ -110,31 +132,47 @@
 
     <main>
       <h1>Datenschutzerklärung</h1>
-      <p>Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2021).</p>
+
+      <p>
+        Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Daten ausschließlich auf 
+        Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2021).
+      </p>
 
       <h2>1. Verantwortlicher</h2>
       <p>
         <strong>PiroMed Office GesmbH</strong><br>
         Webgasse 12/9, 1060 Wien, Österreich<br>
-        E-Mail: <a href="mailto:office@piromedoffice.at" class="link">office@piromedoffice.at</a>
+        E-Mail: <a href="mailto:office@piromedoffice.at" class="contact-link">office@piromedoffice.at</a>
       </p>
 
       <h2>2. Erhebung und Speicherung von Daten</h2>
-      <p>Beim Aufrufen dieser GitHub Pages Website werden durch den Hosting-Provider (GitHub Inc.) Server-Logfiles erhoben (IP-Adresse, Datum, Uhrzeit, Browsertyp). Dies dient der Systemsicherheit und Stabilität auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.</p>
+      <p>
+        Beim Aufrufen dieser GitHub Pages Website werden durch den Hosting-Provider (GitHub Inc.) Server-Logfiles erhoben 
+        (IP-Adresse, Datum, Uhrzeit, Browsertyp). Dies dient der Systemsicherheit und Stabilität auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+      </p>
 
       <h2>3. Cookies und Tracking</h2>
-      <p>Diese Website setzt standardmäßig keine Tracking-Cookies oder Werbetracker von Drittanbietern ein.</p>
+      <p>
+        Diese Website setzt standardmäßig keine Tracking-Cookies oder Werbetracker von Drittanbietern ein.
+      </p>
 
       <h2>4. Ihre Rechte</h2>
-      <p>Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie sich an die Österreichische Datenschutzbehörde wenden.</p>
+      <p>
+        Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und 
+        Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt, können Sie 
+        sich an die Österreichische Datenschutzbehörde wenden.
+      </p>
 
-      <p style="font-size:13px; color:#8b949e; margin-top:35px;">
+      <p style="font-size:13px; color:#8b949e; margin-top:40px; text-align: center;">
         <em>Hinweis: PiroMed Office ist eine universitäre Simulation im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der Technischen Universität Wien (Wintersemester 2026).</em>
       </p>
     </main>
 
     <footer>
       <p>© 2026 PiroMed Office GesmbH · 1060 Wien · Universitäres Praxisprojekt (TU Wien)</p>
+      <p style="font-size: 12px; color: #6e7681; margin-top: 6px;">
+        Konzeption &amp; technische Umsetzung durch PiroMed Office Web Engineering
+      </p>
     </footer>
   </div>
 
