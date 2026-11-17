@@ -97,3 +97,48 @@
             Dipl.-Ing. Birol Kılıç<br>
             Lehrveranstaltung „Daten- und Informatikrecht“ (WS 2026)
           </p>
+        </div>
+
+        <div class="card">
+          <h2>Kontaktformular (Demo-Simulation)</h2>
+          <form onsubmit="handleContact(event)">
+            <div class="form-group">
+              <label for="name">Name / Ordination</label>
+              <input type="text" id="name" name="name" required placeholder="z. B. Ordination Dr. Muster">
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse</label>
+              <input type="email" id="email" name="email" required placeholder="name@ordination.at">
+            </div>
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Ihre Anfrage zum Softwarekonzept ..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Nachricht absenden (Demo)</button>
+          </form>
+          <div id="contact-feedback" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <p style="font-size:14px; color:#b1bac4; margin-top:35px; text-align: center;">
+        <em>Hinweis: Dieses Kontaktformular dient ausschließlich der Demonstration im Rahmen des universitären Lehrprojekts an der TU Wien. Es werden keine Daten an einen Server übertragen oder gespeichert.</em>
+      </p>
+    </main>
+
+    <footer>
+      <p>© 2026 PiroMed Office GesmbH (fiktives Lehrprojekt) · 1060 Wien · TU Wien</p>
+    </footer>
+  </div>
+
+  <script>
+    function handleContact(event) {
+      event.preventDefault();
+      const nameVal = document.getElementById('name').value;
+      const feedback = document.getElementById('contact-feedback');
+      feedback.style.display = 'block';
+      feedback.innerHTML = '<strong>Demo-Hinweis:</strong> Vielen Dank, ' + nameVal + '. Ihre Eingabe wurde lokal simuliert. Da es sich um ein Lehrprojekt handelt, erfolgt keine echte Datenübermittlung.';
+    }
+  </script>
+
+</body>
+</html>
