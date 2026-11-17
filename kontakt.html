@@ -16,7 +16,7 @@
     nav a { color: #ffffff; text-decoration: none; margin: 0 6px; font-weight: 500; }
     nav a:hover, nav a:focus { color: #c9f24c; text-decoration: underline; outline: 2px solid #c9f24c; outline-offset: 2px; }
     h1 { color: #ffffff; font-size: 26px; margin-bottom: 12px; text-align: center; }
-    .intro-text { text-align: center; color: #e2e8f0; font-size: 15px; max-width: 700px; margin: 0 auto 30px auto; }
+    .intro-text { text-align: center; color: #e2e8f0; font-size: 15px; max-width: 720px; margin: 0 auto 30px auto; }
     h2 { color: #ffffff; font-size: 18px; border-bottom: 1px solid #24262b; padding-bottom: 8px; margin-top: 30px; margin-bottom: 14px; }
     p { color: #e2e8f0; font-size: 14.5px; }
     a.link-green { color: #c9f24c; text-decoration: none; }
@@ -72,8 +72,8 @@
     <main>
       <h1>Kontakt</h1>
       <p class="intro-text">
-        Sie haben Fragen zu PiroMed Office oder zum Aufbau dieser Website? Sie erreichen uns über die angegebene E-Mail-Adresse.<br>
-        PiroMed Office ist ein fiktives Lehrprojekt der TU Wien. Die dargestellten Softwareangebote und Preise sind Beispiele. Ein tatsächlicher Vertragsabschluss ist nicht möglich.
+        PiroMed Office ist ein fiktives Softwareunternehmen im Rahmen der Lehrveranstaltung „Daten- und Informatikrecht“ an der TU Wien.<br>
+        Die hier angeführten Kontaktdaten dienen der Veranschaulichung. Auch die Softwareangebote und Preise sind Beispiele. Ein tatsächlicher Vertragsabschluss ist nicht möglich.
       </p>
 
       <div class="contact-grid">
@@ -93,51 +93,7 @@
             <strong>E-Mail:</strong> <a href="mailto:office@piromedoffice.at" class="link-green">office@piromedoffice.at</a>
           </p>
           <p style="font-size: 13.5px; color: #b1bac4; margin-bottom: 0;">
-            <strong>Projektverantwortung (TU Wien):</strong><br>
-            Dipl.-Ing. Birol Kılıç · Lehrveranstaltung „Daten- und Informatikrecht“ (WS 2026)
+            <strong>Projektbearbeitung (TU Wien):</strong><br>
+            Dipl.-Ing. Birol Kılıç<br>
+            Lehrveranstaltung „Daten- und Informatikrecht“ (WS 2026)
           </p>
-        </div>
-
-        <div class="card">
-          <h2>Kontaktformular (Demo-Simulation)</h2>
-          <form onsubmit="handleContact(event)">
-            <div class="form-group">
-              <label for="name">Name / Ordination</label>
-              <input type="text" id="name" name="name" required placeholder="z. B. Ordination Dr. Muster">
-            </div>
-            <div class="form-group">
-              <label for="email">E-Mail-Adresse</label>
-              <input type="email" id="email" name="email" required placeholder="name@ordination.at">
-            </div>
-            <div class="form-group">
-              <label for="message">Nachricht</label>
-              <textarea id="message" name="message" rows="4" required placeholder="Ihre Anfrage zum Softwarekonzept ..."></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Nachricht absenden (Demo)</button>
-          </form>
-          <div id="contact-feedback" role="status" aria-live="polite"></div>
-        </div>
-      </div>
-
-      <p style="font-size:14px; color:#b1bac4; margin-top:35px; text-align: center;">
-        <em>Hinweis: Dieses Kontaktformular dient ausschließlich der Demonstration im Rahmen des universitären Lehrprojekts an der TU Wien. Es werden keine Daten an einen Server übertragen oder gespeichert.</em>
-      </p>
-    </main>
-
-    <footer>
-      <p>© 2026 PiroMed Office GesmbH (fiktives Lehrprojekt) · 1060 Wien · TU Wien</p>
-    </footer>
-  </div>
-
-  <script>
-    function handleContact(event) {
-      event.preventDefault();
-      const nameVal = document.getElementById('name').value;
-      const feedback = document.getElementById('contact-feedback');
-      feedback.style.display = 'block';
-      feedback.innerHTML = '<strong>Demo-Hinweis:</strong> Vielen Dank, ' + nameVal + '. Ihre Eingabe wurde lokal simuliert. Da es sich um ein Lehrprojekt handelt, erfolgt keine echte Datenübermittlung.';
-    }
-  </script>
-
-</body>
-</html>
